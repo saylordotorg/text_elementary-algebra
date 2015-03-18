@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>Rectangular Coordinate System</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s05-09-review-exercises-and-sample-ex.html"><img src="shared/images/batch-left.png"></a> <a href="s05-09-review-exercises-and-sample-ex.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s06-02-graph-by-plotting-points.html">Next Section</a> <a href="s06-02-graph-by-plotting-points.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="section" id="fwk-redden-ch03_s01" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">3.1</span> Rectangular Coordinate System</h2>
+    <div class="learning_objectives editable block" id="fwk-redden-ch03_s01_n01">
+        <h3 class="title">Learning Objectives</h3>
+        <ol class="orderedlist" id="fwk-redden-ch03_s01_l01">
+            <li>Plot points using the rectangular coordinate system.</li>
+            <li>Calculate the distance between any two points in the rectangular coordinate plane.</li>
+            <li>Determine the midpoint between any two points.</li>
+        </ol>
+    </div>
+    <div class="section" id="fwk-redden-ch03_s01_s01">
+        <h2 class="title editable block">Rectangular Coordinate System</h2>
+        <p class="para editable block" id="fwk-redden-ch03_s01_s01_p01">The <span class="margin_term"><a class="glossterm">rectangular coordinate system</a><span class="glossdef">A system with two number lines at right angles uniquely specifying points in a plane using ordered pairs (<em class="emphasis">x</em>, <em class="emphasis">y</em>).</span></span> consists of two real number lines that intersect at a right angle. The horizontal number line is called the <span class="margin_term"><a class="glossterm">x-axis</a><span class="glossdef">The horizontal number line used as reference in the rectangular coordinate system.</span></span>, and the vertical number line is called the <span class="margin_term"><a class="glossterm">y-axis</a><span class="glossdef">The vertical number line used as reference in the rectangular coordinate system.</span></span>. These two number lines define a flat surface called a <span class="margin_term"><a class="glossterm">plane</a><span class="glossdef">The flat surface defined by the <em class="emphasis">x</em>- and <em class="emphasis">y</em>-axes.</span></span>, and each point on this plane is associated with an <span class="margin_term"><a class="glossterm">ordered pair</a><span class="glossdef">A pair (<em class="emphasis">x</em>, <em class="emphasis">y</em>) that identifies position relative to the origin on a rectangular coordinate plane.</span></span> of real numbers (<em class="emphasis">x</em>, <em class="emphasis">y</em>). The first number is called the <em class="emphasis bolditalic">x</em><strong class="emphasis bold">-coordinate</strong>, and the second number is called the <em class="emphasis bolditalic">y</em><strong class="emphasis bold">-coordinate</strong>. The intersection of the two axes is known as the <span class="margin_term"><a class="glossterm">origin</a><span class="glossdef">The point where the <em class="emphasis">x</em>- and <em class="emphasis">y</em>-axes cross, denoted by (0, 0).</span></span>, which corresponds to the point (0, 0).</p>
+        <div class="informalfigure large block" id="fwk-redden-fig03_x001" condition="redden">
+            <img src="section_06/c80b7268ac8cc2cc6bcd5fbdf99e6072.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch03_s01_s01_p02">An ordered pair (<em class="emphasis">x</em>, <em class="emphasis">y</em>) represents the position of a point relative to the origin. The <em class="emphasis">x</em>-coordinate represents a position to the right of the origin if it is positive and to the left of the origin if it is negative. The <em class="emphasis">y</em>-coordinate represents a position above the origin if it is positive and below the origin if it is negative. Using this system, every position (point) in the plane is uniquely identified. For example, the pair (2, 3) denotes the position relative to the origin as shown:</p>
+        <div class="informalfigure large block" id="fwk-redden-fig03_x002" condition="redden">
+            <img src="section_06/a261b102ea95af58439ffec935b5f686.jpg">
+        </div>
+        <div class="informalfigure small block" id="fwk-redden-ch03_s01_s01_f01">
+            <img src="section_06/06d59735f0f81aa19e03e9c0a169c1ea.jpg">
+            <div class="copyright">
+                <p class="para">Portrait of René Descartes (1596–1650) after Frans Hals, from <a class="link" target="_blank" href="http://commons.wikimedia.org/wiki/File:Frans_Hals_-_Portret_van_Ren%C3%A9_Descartes.jpg">http://commons.wikimedia.org/wiki/File:Frans_Hals_-_Portret_van_Ren%C3%A9_Descartes.jpg</a>.</p>
+            </div>
+        </div>
+        <p class="para editable block" id="fwk-redden-ch03_s01_s01_p03">This system is often called the <span class="margin_term"><a class="glossterm">Cartesian coordinate system</a><span class="glossdef">Used in honor of René Descartes when referring to the rectangular coordinate system.</span></span>, named after the French mathematician René Descartes (1596–1650).</p>
+        <p class="para editable block" id="fwk-redden-ch03_s01_s01_p04">The <em class="emphasis">x</em>- and <em class="emphasis">y</em>-axes break the plane into four regions called <span class="margin_term"><a class="glossterm">quadrants</a><span class="glossdef">The four regions of a rectangular coordinate plane partly bounded by the <em class="emphasis">x</em>- and <em class="emphasis">y</em>-axes and numbered using the roman numerals I, II, III, and IV.</span></span>, named using roman numerals I, II, III, and IV, as pictured. In quadrant I, both coordinates are positive. In quadrant II, the <em class="emphasis">x</em>-coordinate is negative and the <em class="emphasis">y</em>-coordinate is positive. In quadrant III, both coordinates are negative. In quadrant IV, the <em class="emphasis">x</em>-coordinate is positive and the <em class="emphasis">y</em>-coordinate is negative.</p>
+        <div class="informalfigure large block" id="fwk-redden-fig03_x003" condition="redden">
+            <img src="section_06/b396a296cc8008cd7cb1bb0ba5b6f1e9.jpg">
+        </div>
+        <p class="para block"> </p>
+        <p class="para editable block" id="fwk-redden-ch03_s01_s01_p05"><strong class="emphasis bold">Example 1:</strong> Plot the ordered pair (−3, 5) and determine the quadrant in which it lies.</p>
+        <p class="para block" id="fwk-redden-ch03_s01_s01_p06"><strong class="emphasis bold">Solution:</strong> The coordinates <span class="inlineequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-redden-03_m0001" display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><mo>−</mo><mn>3</mn></mrow></semantics></math></span> and <span class="inlineequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-redden-03_m0002" display="inline"><semantics><mrow><mi>y</mi><mo>=</mo><mn>5</mn></mrow></semantics></math></span> indicate a point 3 units to the left of and 5 units above the origin.</p>
+        <div class="informalfigure large block" id="fwk-redden-fig03_x004" condition="redden">
+            <img src="section_06/6616dda080dc12e412d151daeba72bd1.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch03_s01_s01_p07">Answer: The point is plotted in quadrant II (QII) because the <em class="emphasis">x</em>-coordinate is negative and the <em class="emphasis">y</em>-coordinate is positive.</p>
+        <p class="para block"> </p>
+        <p class="para editable block" id="fwk-redden-ch03_s01_s01_p08">Ordered pairs with 0 as one of the coordinates do not lie in a quadrant; these points are on one axis or the other (or the point is the origin if both coordinates are 0). Also, the scale indicated on the <em class="emphasis">x</em>-axis may be different from the scale indicated on the <em class="emphasis">y</em>-axis. Choose a scale that is convenient for the given situation.</p>
+        <p class="para block"> </p>
+        <p class="para editable block" id="fwk-redden-ch03_s01_s01_p09"><strong class="emphasis bold">Example 2:</strong> Plot this set of ordered pairs: {(4, 0), (−6, 0), (0, 3), (−2, 6), (−4, −6)}.</p>
+        <p class="para editable block" id="fwk-redden-ch03_s01_s01_p10"><strong class="emphasis bold">Solution:</strong> Each tick mark on the <em class="emphasis">x</em>-axis represents 2 units and each tick mark on the <em class="emphasis">y</em>-axis represents 3 units.</p>
+        <div class="informalfigure large block" id="fwk-redden-fig03_x005" condition="redden">
+            <img src="section_06/524fce52938ea3a05b079bf9eac2fd7e.jpg">
+        </div>
+        <p class="para block"> </p>
+        <p class="para editable block" id="fwk-redden-ch03_s01_s01_p11"><strong class="emphasis bold">Example 3:</strong> Plot this set of ordered pairs: {(−6, −5), (−3, −3), (0, −1), (3, 1), (6, 3)}.</p>
+        <p class="para editable block" id="fwk-redden-ch03_s01_s01_p12"><strong class="emphasis bold">Solution:</strong></p>
+        <div class="informalfigure large block" id="fwk-redden-fig03_x006" condition="redden">
+            <img src="section_06/4cdfeb1bbcd74a115a849405dc88cc11.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch03_s01_s01_p13">In this example, the points appear to be <span class="margin_term"><a class="glossterm">collinear</a><span class="glossdef">Describes points that lie on the same line.</span></span>, or to lie on the same line. The entire chapter focuses on finding and expressing points with this property.</p>
+        <p class="para block"> </p>
+        <p class="para editable block" id="fwk-redden-ch03_s01_s01_p14"><strong class="emphasis bold">Try this!</strong> Plot the set of points {(5, 3), (−3, 2), (−2, −4), (4, −3)} and indicate in which quadrant they lie. ([Link: <a class="link" target="_blank" href="http://www.gone.2012books.lardbucket.org/sites/all/files/fwkPrintableGraphPaper.pdf">Click here for printable graph paper in PDF</a>.])</p>
+        <p class="para editable block" id="fwk-redden-ch03_s01_s01_p15">Answer:</p>
+        <div class="informalfigure large block" id="fwk-redden-fig03_x007" condition="redden">
+            <img src="section_06/798cc58a5dcb757b0eb9cf3666fa3a00.jpg">
+        </div>
+        <div class="video editable block" id="fwk-redden-ch03_s01_s01_n01">
+            <h3 class="title">Video Solution</h3>
+            <a data-iframe-code='&lt;iframe src="http://www.youtube.com/v/cK38XszVONo" condition="http://img.youtube.com/vi/cK38XszVONo/0.jpg" vendor="youtube" width="450" height="340" scalefit="1"&gt;&lt;/iframe&gt;' href="http://www.youtube.com/v/cK38XszVONo" class="replaced-iframe" onclick="return replaceIframe(this)">(click to see video)</a>
+        </div>
+        <p class="para editable block" id="fwk-redden-ch03_s01_s01_p16">Graphs are used in everyday life to display data visually. A <span class="margin_term"><a class="glossterm">line graph</a><span class="glossdef">A set of related data values graphed on a coordinate plane and connected by line segments.</span></span> consists of a set of related data values graphed on a coordinate plane and connected by line segments. Typically, the independent quantity, such as time, is displayed on the <em class="emphasis">x</em>-axis and the dependent quantity, such as distance traveled, on the <em class="emphasis">y</em>-axis.</p>
+        <p class="para block"> </p>
+        <p class="para editable block" id="fwk-redden-ch03_s01_s01_p17"><strong class="emphasis bold">Example 4:</strong> The following line graph shows the number of mathematics and statistics bachelor’s degrees awarded in the United States each year since 1970.</p>
+        <div class="informalfigure large block" id="fwk-redden-fig03_x008" condition="redden">
+            <img src="section_06/b8f18069d0bc80c8440b13c6578ef825.jpg">
+            <div class="copyright">
+                <p class="para">Source: Digest of Education Statistics.</p>
+            </div>
+        </div>
+        <p class="para block">a.	How many mathematics and statistics bachelor’s degrees were awarded in 1975?</p>
+        <p class="para block">b.	In which years were the number of mathematics and statistics degrees awarded at the low of 11,000?</p>
+        <p class="para editable block" id="fwk-redden-ch03_s01_s01_p18"><strong class="emphasis bold">Solution:</strong></p>
+        <p class="para block">a.	The scale on the <em class="emphasis">x</em>-axis represents time since 1970, so to determine the number of degrees awarded in 1975, read the <em class="emphasis">y</em>-value of the graph at <em class="emphasis">x</em> = 5.</p>
+        <div class="informalfigure large block" id="fwk-redden-fig03_x009" condition="redden">
+            <img src="section_06/715c8fcd8da381f5bd515a89bf6dba0b.jpg">
+            <div class="copyright">
+                <p class="para">Source: Digest of Education Statistics.</p>
+            </div>
+        </div>
+        <p class="para editable block" id="fwk-redden-ch03_s01_s01_p19">The <em class="emphasis">y</em>-value corresponding to <em class="emphasis">x</em> = 5 is 18. The graph indicates that this is in thousands; there were 18,000 mathematics and statistics degrees awarded in 1975.</p>
+        <p class="para block">b.	To find the year a particular number of degrees was awarded, first look at the <em class="emphasis">y</em>-axis. In this case, 11,000 degrees is represented by 11 on the <em class="emphasis">y</em>-axis; look to the right to see in which years this occurred.</p>
+        <div class="informalfigure large block" id="fwk-redden-fig03_x010" condition="redden">
+            <img src="section_06/507e2f3fba1b0e8756e8a8acd2bdb3e1.jpg">
+            <div class="copyright">
+                <p class="para">Source: Digest of Education Statistics.</p>
+            </div>
+        </div>
+        <p class="para editable block" id="fwk-redden-ch03_s01_s01_p20">The <em class="emphasis">y</em>-value of 11 occurs at two data points, one where <em class="emphasis">x</em> = 10 and the other where <em class="emphasis">x</em> = 30. These values correspond to the years 1980 and 2000, respectively.</p>
+        <p class="para editable block" id="fwk-redden-ch03_s01_s01_p21">Answers:</p>
+        <p class="para block">a.	In the year 1975, 18,000 mathematics and statistics degrees were awarded.</p>
+        <p class="para block">b.	In the years 1980 and 2000, the lows of 11,000 mathematics and statistics degrees were awarded.</p>
+    </div>
+    <div class="section" id="fwk-redden-ch03_s01_s02">
+        <h2 class="title editable block">Distance Formula</h2>
+        <p class="para block" id="fwk-redden-ch03_s01_s02_p01">Frequently you need to calculate the distance between two points in a plane. To do this, form a right triangle using the two points as vertices of the triangle and then apply the Pythagorean theorem. Recall that the <span class="margin_term"><a class="glossterm">Pythagorean theorem</a><span class="glossdef">Given any right triangle with legs measuring <em class="emphasis">a</em> and <em class="emphasis">b</em> units and hypotenuse measuring <em class="emphasis">c</em> units, then <span class="inlineequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-redden-03_m0003" display="inline"><semantics><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup><mo>=</mo><msup><mi>c</mi><mn>2</mn></msup></mrow></semantics></math></span>.</span></span> states that if given any right triangle with legs measuring <em class="emphasis">a</em> and <em class="emphasis">b</em> units, then the square of the measure of the hypotenuse <em class="emphasis">c</em> is equal to the sum of the squares of the legs: <span class="inlineequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-redden-03_m0004" display="inline"><semantics><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup><mo>=</mo><msup><mi>c</mi><mn>2</mn></msup></mrow></semantics></math></span>. In other words, the hypotenuse of any right triangle is equal to the square root of the sum of the squares of its legs.</p>
+        <div class="informalfigure large block" id="fwk-redden-fig03_x011" condition="redden">
+            <img src="section_06/c79a31c0faaeea534caa19d90b66ce7c.jpg">
+        </div>
+        <p class="para block"> </p>
+        <p class="para editable block" id="fwk-redden-ch03_s01_s02_p02"><strong class="emphasis bold">Example 5:</strong> Find the distance between (−1, 2) and (3, 5).</p>
+        <p class="para editable block" id="fwk-redden-ch03_s01_s02_p03"><strong class="emphasis bold">Solution:</strong> Form a right triangle by drawing horizontal and vertical lines through the two points. This creates a right triangle as shown below:</p>
+        <div class="informalfigure large block" id="fwk-redden-fig03_x012" condition="redden">
+            <img src="section_06/3c5a03ec2929cd75026381e197f7c8d8.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch03_s01_s02_p04">The length of leg <em class="emphasis">b</em> is calculated by finding the distance between the <em class="emphasis">x</em>-values of the given points, and the length of leg <em class="emphasis">a</em> is calculated by finding the distance between the given <em class="emphasis">y</em>-values.</p>
+        <div class="informalfigure large block" id="fwk-redden-eq03_001" condition="equation-image">
+            <img src="section_06/cff568d61640ed2dd9071d5e46ca8122.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch03_s01_s02_p05">Next, use the Pythagorean theorem to find the length of the hypotenuse.</p>
+        <div class="informalfigure large block" id="fwk-redden-eq03_002" condition="equation-image">
+            <img src="section_06/ea8ff760928d2155cb1da88a28f6b8f4.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch03_s01_s02_p06">Answer: The distance between the two points is 5 units.</p>
+        <p class="para block"> </p>
+        <p class="para editable block" id="fwk-redden-ch03_s01_s02_p07">Generalize this process to produce a formula that can be used to algebraically calculate the distance between any two given points.</p>
+        <div class="informalfigure large block" id="fwk-redden-fig03_x013" condition="redden">
+            <img src="section_06/fe225734d69113c19f4ba4032c82d786.jpg">
+        </div>
+        <p class="para block" id="fwk-redden-ch03_s01_s02_p08">Given two points, <span class="inlineequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-redden-03_m0005" display="inline"><semantics><mrow><mrow><mo>(</mo><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mtext> </mtext><msub><mi>y</mi><mn>1</mn></msub></mrow><mo>)</mo></mrow><mtext> </mtext></mrow></semantics></math></span> and <span class="inlineequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-redden-03_m0006" display="inline"><semantics><mrow><mrow><mo>(</mo><mrow><msub><mi>x</mi><mn>2</mn></msub><mo>,</mo><mtext> </mtext><msub><mi>y</mi><mn>2</mn></msub></mrow><mo>)</mo></mrow><mtext> </mtext></mrow></semantics></math></span>, then the distance, <em class="emphasis">d</em>, between them is given by the <span class="margin_term"><a class="glossterm">distance formula</a><span class="glossdef">Given two points <span class="inlineequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-redden-03_m0007" display="inline"><semantics><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mtext> </mtext><msub><mi>y</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></semantics></math></span> and <span class="inlineequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-redden-03_m0008" display="inline"><semantics><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>2</mn></msub><mo>,</mo><mtext> </mtext><msub><mi>y</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow></semantics></math></span>, calculate the distance <em class="emphasis">d</em> between them using the formula <span class="inlineequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-redden-03_m0009" display="inline"><semantics><mrow><mi>d</mi><mo>=</mo><msqrt><mrow><msup><mrow><mrow><mo>(</mo><mrow><msub> <mi>x</mi> <mn>2</mn></msub><mo>−</mo><msub> <mi>x</mi> <mn>1</mn></msub></mrow><mo>)</mo></mrow></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mrow><mo>(</mo><mrow><msub> <mi>y</mi> <mn>2</mn></msub><mo>−</mo><msub> <mi>y</mi> <mn>1</mn></msub></mrow><mo>)</mo></mrow></mrow><mn>2</mn></msup></mrow></msqrt><mtext>.</mtext></mrow></semantics></math></span></span></span>:</p>
+        <span class="informalequation block"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-redden-03_m0010" display="block"><semantics><mrow><mi>d</mi><mo>=</mo><msqrt><mrow><msup><mrow><mrow><mo>(</mo><mrow><msub><mi>x</mi><mn>2</mn></msub><mo>−</mo><msub><mi>x</mi><mn>1</mn></msub></mrow><mo>)</mo></mrow></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mrow><mo>(</mo><mrow><msub><mi>y</mi><mn>2</mn></msub><mo>−</mo><msub><mi>y</mi><mn>1</mn></msub></mrow><mo>)</mo></mrow></mrow><mn>2</mn></msup></mrow></msqrt></mrow></semantics></math></span>
+        <p class="para block"> </p>
+        <p class="para editable block" id="fwk-redden-ch03_s01_s02_p09"><strong class="emphasis bold">Example 6:</strong> Calculate the distance between (−3, −1) and (−2, 4).</p>
+        <p class="para editable block" id="fwk-redden-ch03_s01_s02_p10"><strong class="emphasis bold">Solution:</strong> Use the distance formula.</p>
+        <div class="informalfigure large block" id="fwk-redden-eq03_003" condition="equation-image">
+            <img src="section_06/6eba258bb644138153a8a92c5460d70a.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch03_s01_s02_p11">It is a good practice to include the formula in its general form as a part of the written solution before substituting values for the variables. This improves readability and reduces the chance for errors.</p>
+        <div class="informalfigure large block" id="fwk-redden-eq03_004" condition="equation-image">
+            <img src="section_06/f5b57eb9ee8ecefe341d47d159a70361.jpg">
+        </div>
+        <p class="para block" id="fwk-redden-ch03_s01_s02_p12">Answer: <span class="inlineequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-redden-03_m0011" display="inline"><semantics><mrow><msqrt><mrow><mn>26</mn></mrow></msqrt></mrow></semantics></math></span> units</p>
+        <p class="para block"> </p>
+        <p class="para editable block" id="fwk-redden-ch03_s01_s02_p14"><strong class="emphasis bold">Try this!</strong> Calculate the distance between (−7, 5) and (−1, 13).</p>
+        <p class="para editable block" id="fwk-redden-ch03_s01_s02_p15">Answer: 10 units</p>
+        <div class="video editable block" id="fwk-redden-ch03_s01_s02_n01">
+            <h3 class="title">Video Solution</h3>
+            <a data-iframe-code='&lt;iframe src="http://www.youtube.com/v/Hu8kSWJwI9U" condition="http://img.youtube.com/vi/Hu8kSWJwI9U/0.jpg" vendor="youtube" width="450" height="340" scalefit="1"&gt;&lt;/iframe&gt;' href="http://www.youtube.com/v/Hu8kSWJwI9U" class="replaced-iframe" onclick="return replaceIframe(this)">(click to see video)</a>
+        </div>
+        <p class="para block"> </p>
+        <p class="para editable block" id="fwk-redden-ch03_s01_s02_p16"><strong class="emphasis bold">Example 7:</strong> Do the three points (1, −1), (3, −3), and (3, 1) form a right triangle?</p>
+        <p class="para block" id="fwk-redden-ch03_s01_s02_p17"><strong class="emphasis bold">Solution:</strong> The Pythagorean theorem states that having side lengths that satisfy the property <span class="inlineequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-redden-03_m0012" display="inline"><semantics><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup><mo>=</mo><msup><mi>c</mi><mn>2</mn></msup></mrow></semantics></math></span> is a necessary and sufficient condition of right triangles. In other words, if you can show that the sum of the squares of the leg lengths of the triangle is equal to the square of the length of the hypotenuse, then the figure must be a right triangle. First, calculate the length of each side using the distance formula.</p>
+        <div class="informalfigure large block" id="fwk-redden-fig03_x381" condition="redden">
+            <img src="section_06/028b6617d4f9dc36345388a0c4118a82.jpg">
+        </div>
+        <p class="para block" id="fwk-redden-ch03_s01_s02_p24">Now we check to see if <span class="inlineequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-redden-03_m0013" display="inline"><semantics><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup><mo>=</mo><msup><mi>c</mi><mn>2</mn></msup></mrow></semantics></math></span>.</p>
+        <div class="informalfigure full block" id="fwk-redden-eq03_008" condition="equation-image">
+            <img src="section_06/4849e6d1f4bf866b3559a557c701b223.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch03_s01_s02_p25">Answer: Yes, the three points form a right triangle. In fact, since two of the legs are equal in length, the points form an isosceles right triangle.</p>
+    </div>
+    <div class="section" id="fwk-redden-ch03_s01_s03">
+        <h2 class="title editable block">Midpoint Formula</h2>
+        <p class="para block" id="fwk-redden-ch03_s01_s03_p01">The point that bisects the line segment formed by two points, <span class="inlineequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-redden-03_m0014" display="inline"><semantics><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mtext> </mtext><msub><mi>y</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></semantics></math></span> and <span class="inlineequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-redden-03_m0015" display="inline"><semantics><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>2</mn></msub><mo>,</mo><mtext> </mtext><msub><mi>y</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow></semantics></math></span>, is called the <span class="margin_term"><a class="glossterm">midpoint</a><span class="glossdef">Given two points, <span class="inlineequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-redden-03_m0016" display="inline"><semantics><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mtext> </mtext><msub><mi>y</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></semantics></math></span> and <span class="inlineequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-redden-03_m0017" display="inline"><semantics><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>2</mn></msub><mo>,</mo><mtext> </mtext><msub><mi>y</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow></semantics></math></span>, the midpoint is an ordered pair given by <span class="inlineequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-redden-03_m0018" display="inline"><semantics><mrow><mrow><mo>(</mo><mrow><mfrac><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>+</mo><msub><mi>x</mi><mn>2</mn></msub></mrow><mn>2</mn></mfrac><mo>,</mo><mtext> </mtext><mfrac><mrow><msub><mi>y</mi><mn>1</mn></msub><mo>+</mo><msub><mi>y</mi><mn>2</mn></msub></mrow><mn>2</mn></mfrac></mrow><mo>)</mo></mrow></mrow></semantics></math></span>.</span></span> and is given by the following formula:</p>
+        <div class="informalfigure large block" id="fwk-redden-eq03_009" condition="equation-image">
+            <img src="section_06/a97efe3b4c5e44f345f158b86eec66f4.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch03_s01_s03_p02">The midpoint is an ordered pair formed by finding the average of the <em class="emphasis">x</em>-values and the average of the <em class="emphasis">y</em>-values of the given points.</p>
+        <p class="para block"> </p>
+        <p class="para editable block" id="fwk-redden-ch03_s01_s03_p03"><strong class="emphasis bold">Example 8:</strong> Calculate the midpoint between (−1, −2) and (7, 4).</p>
+        <p class="para editable block" id="fwk-redden-ch03_s01_s03_p04"><strong class="emphasis bold">Solution:</strong> First, calculate the average of the <em class="emphasis">x</em>- and <em class="emphasis">y</em>-values of the given points.</p>
+        <div class="informalfigure large block" id="fwk-redden-eq03_010" condition="equation-image">
+            <img src="section_06/14cf8183ae2fbeae7b95c30f391189e9.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch03_s01_s03_p05">Next, form the midpoint as an ordered pair using the averaged coordinates.</p>
+        <div class="informalfigure large block" id="fwk-redden-eq03_011" condition="equation-image">
+            <img src="section_06/5083f70c48c6a5cfa6ffd1e52495d10b.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch03_s01_s03_p06">Answer: (3, 1)</p>
+        <p class="para block"> </p>
+        <p class="para editable block" id="fwk-redden-ch03_s01_s03_p07">To verify that this is indeed the midpoint, calculate the distance between the two given points and verify that the result is equal to the sum of the two equal distances from the endpoints to this midpoint. This verification is left to the reader as an exercise.</p>
+        <div class="informalfigure large block" id="fwk-redden-fig03_x017" condition="redden">
+            <img src="section_06/b5646824be0fd6c65b18c08c662c173f.jpg">
+        </div>
+        <p class="para block"> </p>
+        <p class="para editable block" id="fwk-redden-ch03_s01_s03_p08"><strong class="emphasis bold">Try this!</strong> Find the midpoint between (−6, 5) and (6, −11).</p>
+        <p class="para editable block" id="fwk-redden-ch03_s01_s03_p09">Answer: (0, −3)</p>
+        <div class="video editable block" id="fwk-redden-ch03_s01_s03_n01">
+            <h3 class="title">Video Solution</h3>
+            <a data-iframe-code='&lt;iframe src="http://www.youtube.com/v/zdYeI50g4Cc" condition="http://img.youtube.com/vi/zdYeI50g4Cc/0.jpg" vendor="youtube" width="450" height="340" scalefit="1"&gt;&lt;/iframe&gt;' href="http://www.youtube.com/v/zdYeI50g4Cc" class="replaced-iframe" onclick="return replaceIframe(this)">(click to see video)</a>
+        </div>
+        <div class="key_takeaways block" id="fwk-redden-ch03_s01_s03_n02">
+            <h3 class="title">Key Takeaways</h3>
+            <ul class="itemizedlist" id="fwk-redden-ch03_s01_s03_l01">
+                <li>Use the rectangular coordinate system to uniquely identify points in a plane using ordered pairs (<em class="emphasis">x</em>, <em class="emphasis">y</em>). Ordered pairs indicate position relative to the origin. The <em class="emphasis">x</em>-coordinate indicates position to the left and right of the origin. The <em class="emphasis">y</em>-coordinate indicates position above or below the origin.</li>
+                <li>The scales on the <em class="emphasis">x</em>-axis and <em class="emphasis">y</em>-axis may be different. Choose a scale for each axis that is appropriate for the given problem.</li>
+                <li>Graphs are used to visualize real-world data. Typically, independent data is associated with the <em class="emphasis">x</em>-axis and dependent data is associated with the <em class="emphasis">y</em>-axis.</li>
+                <li>The Pythagorean theorem gives us a necessary and sufficient condition of right triangles. Given a right triangle, then the measures of the sides satisfy <span class="inlineequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-redden-03_m0019" display="inline"><semantics><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup><mo>=</mo><msup><mi>c</mi><mn>2</mn></msup></mrow></semantics></math></span>. Conversely, if the sides satisfy <span class="inlineequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-redden-03_m0020" display="inline"><semantics><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup><mo>=</mo><msup><mi>c</mi><mn>2</mn></msup></mrow></semantics></math></span>, then the triangle must be a right triangle.</li>
+                <li>The distance formula, <span class="inlineequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-redden-03_m0021" display="inline"><semantics><mrow><mi>d</mi><mo>=</mo><msqrt><mrow><msup><mrow><mrow><mo>(</mo><mrow><msub><mi>x</mi><mn>2</mn></msub><mo>−</mo><msub><mi>x</mi><mn>1</mn></msub></mrow><mo>)</mo></mrow></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mrow><mo>(</mo><mrow><msub><mi>y</mi><mn>2</mn></msub><mo>−</mo><msub><mi>y</mi><mn>1</mn></msub></mrow><mo>)</mo></mrow></mrow><mn>2</mn></msup></mrow></msqrt></mrow></semantics></math></span>, is derived from the Pythagorean theorem and gives us the distance between any two points, <span class="inlineequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-redden-03_m0022" display="inline"><semantics><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mtext> </mtext><msub><mi>y</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></semantics></math></span> and <span class="inlineequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-redden-03_m0023" display="inline"><semantics><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>2</mn></msub><mo>,</mo><mtext> </mtext><msub><mi>y</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow></semantics></math></span>, in a rectangular coordinate plane.</li>
+                <li>The midpoint formula, <span class="inlineequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-redden-03_m0024" display="inline"><semantics><mrow><mrow><mo>(</mo><mrow><mfrac><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>+</mo><msub><mi>x</mi><mn>2</mn></msub></mrow><mn>2</mn></mfrac><mo>,</mo><mtext> </mtext><mfrac><mrow><msub><mi>y</mi><mn>1</mn></msub><mo>+</mo><msub><mi>y</mi><mn>2</mn></msub></mrow><mn>2</mn></mfrac></mrow><mo>)</mo></mrow></mrow></semantics></math></span>, is derived by taking the average of each coordinate and forming an ordered pair.</li>
+            </ul>
+        </div>
+        <div class="exercises-math block" id="fwk-redden-ch03_s01_s03_n03">
+            <h3 class="title editable">Topic Exercises</h3>
+            <p class="simpara">Part A: Ordered Pairs</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p10"><em class="emphasis bolditalic">Give the coordinates of points </em><em class="emphasis">A</em><em class="emphasis bolditalic">, </em><em class="emphasis">B</em><em class="emphasis bolditalic">, </em><em class="emphasis">C</em><em class="emphasis bolditalic">, </em><em class="emphasis">D</em><em class="emphasis bolditalic">, and </em><em class="emphasis">E</em><em class="emphasis bolditalic">.</em></p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p11">1.	
+			                </p>
+<div class="informalfigure medium" id="fwk-redden-fig03_x018" condition="redden">
+                    <img src="section_06/5bb4643fabbcf19b8d3fb0e958742d2f.jpg">
+                </div>
+
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p13">2.	
+			                </p>
+<div class="informalfigure medium" id="fwk-redden-fig03_x019" condition="redden">
+                    <img src="section_06/a1040db8e89fe557d379d15b14a9fa1b.jpg">
+                </div>
+
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p15">3.	
+			                </p>
+<div class="informalfigure medium" id="fwk-redden-fig03_x020" condition="redden">
+                    <img src="section_06/2c9c74ec9907934700d6b9a5918ef3ad.jpg">
+                </div>
+
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p17">4.	
+			                </p>
+<div class="informalfigure medium" id="fwk-redden-fig03_x021" condition="redden">
+                    <img src="section_06/d030cd4c8d556eb76a37c82146c0e885.jpg">
+                </div>
+
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p19">5.	
+			                </p>
+<div class="informalfigure medium" id="fwk-redden-fig03_x022" condition="redden">
+                    <img src="section_06/9caf02b227d709996af15bbb6f971187.jpg">
+                </div>
+
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p21">6.	
+			                </p>
+<div class="informalfigure medium" id="fwk-redden-fig03_x023" condition="redden">
+                    <img src="section_06/21f98b4a57ddefdb2065ddea9b1627f8.jpg">
+                </div>
+
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p23"><em class="emphasis bolditalic">Graph the given set of ordered pairs.</em></p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p24">7.	{(−4, 5), (−1, 1), (−3, −2), (5, −1)}</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p26">8.	{(−15, −10), (−5, 10), (15, 10), (5, −10)}</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p28">9.	{(−2, 5), (10, 0), (2, −5), (6, −10)}</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p30">10.	{(−8, 3), (−4, 6), (0, −6), (6, 9)}</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p32">11.	{(−10, 5), (20,  −10), (30, 15), (50, 0)}</p>
+            <p class="para" id="fwk-redden-ch03_s01_s03_p34">12.	<span class="inlineequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-redden-03_m0030" display="inline"><semantics><mrow><mrow><mo>{</mo><mrow><mrow><mo>(</mo><mrow><mo>−</mo><mfrac><mn>5</mn><mn>3</mn></mfrac><mo>,</mo><mtext> </mtext><mo>−</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><mo>)</mo></mrow><mo>,</mo><mrow><mo>(</mo><mrow><mo>−</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>,</mo><mtext> </mtext><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><mo>)</mo></mrow><mo>,</mo><mrow><mo>(</mo><mrow><mfrac><mn>2</mn><mn>3</mn></mfrac><mo>,</mo><mtext> </mtext><mo>−</mo><mn>1</mn></mrow><mo>)</mo></mrow><mo>,</mo><mrow><mo>(</mo><mrow><mfrac><mn>5</mn><mn>3</mn></mfrac><mo>,</mo><mtext> </mtext><mn>1</mn></mrow><mo>)</mo></mrow></mrow><mo>}</mo></mrow></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch03_s01_s03_p36">13.	<span class="inlineequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-redden-03_m0031" display="inline"><semantics><mrow><mrow><mo>{</mo><mrow><mrow><mo>(</mo><mrow><mo>−</mo><mfrac><mn>3</mn><mn>5</mn></mfrac><mo>,</mo><mtext> </mtext><mo>−</mo><mfrac><mn>4</mn><mn>3</mn></mfrac></mrow><mo>)</mo></mrow><mo>,</mo><mrow><mo>(</mo><mrow><mfrac><mn>2</mn><mn>5</mn></mfrac><mo>,</mo><mtext> </mtext><mfrac><mn>4</mn><mn>3</mn></mfrac></mrow><mo>)</mo></mrow><mo>,</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>,</mo><mtext> </mtext><mo>−</mo><mfrac><mn>2</mn><mn>3</mn></mfrac></mrow><mo>)</mo></mrow><mo>,</mo><mrow><mo>(</mo><mrow><mn>0</mn><mo>,</mo><mtext> </mtext><mn>1</mn></mrow><mo>)</mo></mrow></mrow><mo>}</mo></mrow></mrow></semantics></math></span></p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p38">14.	{(−3.5, 0), (−1.5, 2), (0, 1.5), (2.5, −1.5)}</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p40">15.	{(−0.8, 0.2), (−0.2, −0.4), (0, −1), (0.6, −0.4)}</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p42">16.	{(−1.2, −1.2), (−0.3, −0.3), (0, 0), (0.6, 0.6), (1.2, 1.2)}</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p44"><em class="emphasis bolditalic">State the quadrant in which the given point lies.</em></p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p45">17.	(−3, 2)</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p47">18.	(5, 7)</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p49">19.	(−12, −15)</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p51">20.	(7, −8)</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p53">21.	(−3.8, 4.6)</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p55">22.	(17.3, 1.9)</p>
+            <p class="para" id="fwk-redden-ch03_s01_s03_p57">23.	<span class="inlineequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-redden-03_m0035" display="inline"><semantics><mrow><mrow><mo>(</mo><mrow><mo>−</mo><mstyle scriptlevel="+1"><mfrac><mn>1</mn><mn>8</mn></mfrac></mstyle><mo>,</mo><mtext> </mtext><mo>−</mo><mstyle scriptlevel="+1"><mfrac><mn>5</mn><mn>8</mn></mfrac></mstyle></mrow><mo>)</mo></mrow></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch03_s01_s03_p59">24.	<span class="inlineequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-redden-03_m0036" display="inline"><semantics><mrow><mrow><mo>(</mo><mrow><mstyle scriptlevel="+1"><mfrac><mn>3</mn><mn>4</mn></mfrac></mstyle><mo>,</mo><mtext> </mtext><mo>−</mo><mstyle scriptlevel="+1"><mfrac><mn>1</mn><mn>4</mn></mfrac></mstyle></mrow><mo>)</mo></mrow></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch03_s01_s03_p61">25.	<span class="inlineequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-redden-03_m0037" display="inline"><semantics><mrow><mi>x</mi><mo>&gt;</mo><mn>0</mn><mtext> </mtext><mtext> </mtext><mi>a</mi><mi>n</mi><mi>d</mi><mtext> </mtext><mtext> </mtext><mi>y</mi><mo>&lt;</mo><mn>0</mn></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch03_s01_s03_p63">26.	<span class="inlineequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-redden-03_m0038" display="inline"><semantics><mrow><mi>x</mi><mo>&lt;</mo><mn>0</mn><mtext> </mtext><mtext> </mtext><mi>a</mi><mi>n</mi><mi>d</mi><mtext> </mtext><mtext> </mtext><mi>y</mi><mo>&lt;</mo><mn>0</mn></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch03_s01_s03_p65">27.	<span class="inlineequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-redden-03_m0039" display="inline"><semantics><mrow><mi>x</mi><mo>&lt;</mo><mn>0</mn><mtext> </mtext><mtext> </mtext><mi>a</mi><mi>n</mi><mi>d</mi><mtext> </mtext><mtext> </mtext><mi>y</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch03_s01_s03_p67">28.	<span class="inlineequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-redden-03_m0040" display="inline"><semantics><mrow><mi>x</mi><mo>&gt;</mo><mn>0</mn><mtext> </mtext><mtext> </mtext><mi>a</mi><mi>n</mi><mi>d</mi><mtext> </mtext><mtext> </mtext><mi>y</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math></span></p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p69"><em class="emphasis bolditalic">The average price of a gallon of regular unleaded gasoline in US cities is given in the following line graph. Use the graph to answer the following questions.</em>
+			                </p>
+<div class="informalfigure medium" id="fwk-redden-fig03_x034" condition="redden">
+                    <img src="section_06/59e3c2c924d4c1056fc7ee9ca12df3fc.jpg">
+                    <div class="copyright">
+                        <p class="para">Source: Bureau of Labor Statistics.</p>
+                    </div>
+                </div>
+
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p70">29.	What was the average price of a gallon of unleaded gasoline in 2004?</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p72">30.	What was the average price of a gallon of unleaded gasoline in 1976?</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p74">31.	In which years were the average price of a gallon of unleaded gasoline $1.20?</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p76">32.	What is the price increase of a gallon of gasoline from 1980 to 2008?</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p78">33.	What was the percentage increase in the price of a gallon of unleaded gasoline from 1976 to 1980?</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p80">34.	What was the percentage increase in the price of a gallon of unleaded gasoline from 2000 to 2008?</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p82"><em class="emphasis bolditalic">The average price of all-purpose white flour in US cities from 1980 to 2008 is given in the following line graph. Use the graph to answer the questions that follow.</em>
+			                </p>
+<div class="informalfigure medium" id="fwk-redden-fig03_x035" condition="redden">
+                    <img src="section_06/cb0994656aebf5560ecc7ab0373b259c.jpg">
+                    <div class="copyright">
+                        <p class="para">Source: Bureau of Labor Statistics.</p>
+                    </div>
+                </div>
+
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p83">35.	What was the average price per pound of all-purpose white flour in 2000?</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p85">36.	What was the average price per pound of all-purpose white flour in 2008?</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p87">37.	In which year did the price of flour average $0.25 per pound?</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p89">38.	In which years did the price of flour average $0.20 per pound?</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p91">39.	What was the percentage increase in flour from the year 2000 to 2008?</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p93">40.	What was the percentage increase in flour from the year 1992 to 2000?</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p95"><em class="emphasis bolditalic">Given the following data, create a line graph.</em></p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p96">41.	The percentage of total high school graduates who enrolled in college.</p>
+            <div class="informaltable" frame="all">
+                <table cellpadding="0" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Year</th>
+                            <th>Percentage</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1969</td>
+                            <td>36%</td>
+                        </tr>
+                        <tr>
+                            <td>1979</td>
+                            <td>40%</td>
+                        </tr>
+                        <tr>
+                            <td>1989</td>
+                            <td>47%</td>
+                        </tr>
+                        <tr>
+                            <td>1999</td>
+                            <td>42%</td>
+                        </tr>
+                    </tbody>
+                </table>
+                            <div class="copyright">
+                    <p class="para">Source: Digest of Education Statistics.</p>
+                </div>
+            </div>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p98">42.	The average daily temperature given in degrees Fahrenheit in May.</p>
+            <div class="informaltable" frame="all">
+                <table cellpadding="0" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Exam</th>
+                            <th>Temperature</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>8:00 am</td>
+                            <td>60</td>
+                        </tr>
+                        <tr>
+                            <td>12:00 pm</td>
+                            <td>72</td>
+                        </tr>
+                        <tr>
+                            <td>4:00 pm</td>
+                            <td>75</td>
+                        </tr>
+                        <tr>
+                            <td>8:00 pm</td>
+                            <td>67</td>
+                        </tr>
+                        <tr>
+                            <td>12:00 am</td>
+                            <td>60</td>
+                        </tr>
+                        <tr>
+                            <td>4:00 am</td>
+                            <td>55</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p100"><em class="emphasis bolditalic">Calculate the area of the shape formed by connecting the following set of vertices.</em></p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p101">43.	{(0, 0), (0, 3), (5, 0), (5, 3)}</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p103">44.	{(−1, −1), (−1, 1), (1, −1), (1, 1)}</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p105">45.	{(−2, −1), (−2, 3), (5, 3), (5, −1)}</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p107">46.	{(−5, −4), (−5, 5), (3, 5), (3, −4)}</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p109">47.	{(0, 0), (4, 0), (2, 2)}</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p111">48.	{(−2, −2), (2, −2), (0, 2)}</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p113">49.	{(0, 0), (0, 6), (3, 4)}</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p115">50.	{(−2, 0), (5, 0), (3, −3)}</p>
+            <p class="simpara">Part B: Distance Formula</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p117"><em class="emphasis bolditalic">Calculate the distance between the given two points.</em></p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p118">51.	(−5, 3) and (−1, 6)</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p120">52.	(6, −2) and (−2, 4)</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p122">53.	(0, 0) and (5, 12)</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p124">54.	(−6, −8) and (0, 0)</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p126">55.	(−7, 8) and (5, −1)</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p128">56.	(−1, −2) and (9, 22)</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p130">57.	(−1, 2) and (−7/2, −4)</p>
+            <p class="para" id="fwk-redden-ch03_s01_s03_p132">58.	<span class="inlineequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-redden-03_m0041" display="inline"><semantics><mrow><mrow><mo>(</mo><mrow><mo>−</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>,</mo><mtext> </mtext><mfrac><mn>1</mn><mn>3</mn></mfrac></mrow><mo>)</mo></mrow></mrow></semantics></math></span> and <span class="inlineequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-redden-03_m0042" display="inline"><semantics><mrow><mrow><mo>(</mo><mrow><mfrac><mn>5</mn><mn>2</mn></mfrac><mo>,</mo><mtext> </mtext><mo>−</mo><mfrac><mrow><mn>11</mn></mrow><mn>3</mn></mfrac></mrow><mo>)</mo></mrow></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch03_s01_s03_p134">59.	<span class="inlineequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-redden-03_m0043" display="inline"><semantics><mrow><mrow><mo>(</mo><mrow><mo>−</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>,</mo><mtext> </mtext><mfrac><mn>2</mn><mn>3</mn></mfrac></mrow><mo>)</mo></mrow></mrow></semantics></math></span> and <span class="inlineequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-redden-03_m0044" display="inline"><semantics><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>,</mo><mtext> </mtext><mo>−</mo><mfrac><mn>1</mn><mn>3</mn></mfrac></mrow><mo>)</mo></mrow></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch03_s01_s03_p136">60.	<span class="inlineequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-redden-03_m0045" display="inline"><semantics><mrow><mrow><mo>(</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>,</mo><mtext> </mtext><mo>−</mo><mfrac><mn>3</mn><mn>4</mn></mfrac></mrow><mo>)</mo></mrow></mrow></semantics></math></span> and <span class="inlineequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-redden-03_m0046" display="inline"><semantics><mrow><mrow><mo>(</mo><mrow><mfrac><mn>3</mn><mn>2</mn></mfrac><mo>,</mo><mtext> </mtext><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow><mo>)</mo></mrow></mrow></semantics></math></span></p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p138">61.	(1, 2) and (4, 3)</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p140">62.	(2, −4) and (−3, −2)</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p142">63.	(−1, 5) and (1, −3)</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p144">64.	(1, −7) and (5, −1)</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p146">65.	(−7, −3) and (−1, 6)</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p148">66.	(0, 1) and (1, 0)</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p150">67.	(−0.2, −0.2) and (1.8, 1.8)</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p152">68.	(1.2, −3.3) and (2.2, −1.7)</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p154"><em class="emphasis bolditalic">For each problem, show that the three points form a right triangle.</em></p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p155">69.	(−3, −2), (0, −2), and (0, 4)</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p156">70.	(7, 12), (7, −13), and (−5, −4)</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p157">71.	(−1.4, 0.2), (1, 2), and (1, −3)</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p158">72.	(2, −1), (−1, 2), and (6, 3)</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p159">73.	(−5, 2), (−1, −2), and (−2, 5)</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p160">74.	(1, −2), (2, 3), and (−3, 4)</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p161"><em class="emphasis bolditalic">Isosceles triangles have two legs of equal length. For each problem, show that the following points form an isosceles triangle.</em></p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p162">75.	(1, 6), (−1, 1), and (3, 1)</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p163">76.	(−6, −2), (−3, −5), and (−9, −5)</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p164">77.	(−3, 0), (0, 3), and (3, 0)</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p165">78.	(0, −1), (0, 1), and (1, 0)</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p166"><em class="emphasis bolditalic">Calculate the area and the perimeter of the triangles formed by the following set of vertices.</em></p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p167">79.	{(−4, −5), (−4, 3), (2, 3)}</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p169">80.	{(−1, 1), (3, 1), (3, −2)}</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p171">81.	{(−3, 1), (−3, 5), (1, 5)}</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p173">82.	{(−3, −1), (−3, 7), (1, −1)}</p>
+            <p class="simpara">Part C: Midpoint Formula</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p175"><em class="emphasis bolditalic">Find the midpoint between the given two points.</em></p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p176">83.	(−1, 6) and (−7, −2)</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p178">84.	(8, 0) and (4, −3)</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p180">85.	(−10, 0) and (10, 0)</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p182">86.	(−3, −6) and (−3, 6)</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p184">87.	(−10, 5) and (14, −5)</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p186">88.	(0, 1) and (2, 2)</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p188">89.	(5, −3) and (4, −5)</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p190">90.	(0, 0) and (1, 1)</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p192">91.	(−1, −1) and (4, 4)</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p194">92.	(3, −5) and (3, 5)</p>
+            <p class="para" id="fwk-redden-ch03_s01_s03_p196">93.	<span class="inlineequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-redden-03_m0056" display="inline"><semantics><mrow><mrow><mo>(</mo><mrow><mo>−</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>,</mo><mtext> </mtext><mo>−</mo><mfrac><mn>1</mn><mn>3</mn></mfrac></mrow><mo>)</mo></mrow></mrow></semantics></math></span> and <span class="inlineequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-redden-03_m0057" display="inline"><semantics><mrow><mrow><mo>(</mo><mrow><mfrac><mn>3</mn><mn>2</mn></mfrac><mo>,</mo><mtext> </mtext><mfrac><mn>7</mn><mn>3</mn></mfrac></mrow><mo>)</mo></mrow></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch03_s01_s03_p198">94.	<span class="inlineequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-redden-03_m0058" display="inline"><semantics><mrow><mrow><mo>(</mo><mrow><mfrac><mn>3</mn><mn>4</mn></mfrac><mo>,</mo><mtext> </mtext><mo>−</mo><mfrac><mn>2</mn><mn>3</mn></mfrac></mrow><mo>)</mo></mrow></mrow></semantics></math></span> and <span class="inlineequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-redden-03_m0059" display="inline"><semantics><mrow><mrow><mo>(</mo><mrow><mfrac><mn>1</mn><mn>8</mn></mfrac><mo>,</mo><mtext> </mtext><mo>−</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><mo>)</mo></mrow></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch03_s01_s03_p200">95.	<span class="inlineequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-redden-03_m0060" display="inline"><semantics><mrow><mrow><mo>(</mo><mrow><mfrac><mn>5</mn><mn>3</mn></mfrac><mo>,</mo><mtext> </mtext><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow><mo>)</mo></mrow></mrow></semantics></math></span> and <span class="inlineequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-redden-03_m0061" display="inline"><semantics><mrow><mrow><mo>(</mo><mrow><mo>−</mo><mfrac><mn>1</mn><mn>6</mn></mfrac><mo>,</mo><mtext> </mtext><mo>−</mo><mfrac><mn>3</mn><mn>2</mn></mfrac></mrow><mo>)</mo></mrow></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch03_s01_s03_p202">96.	<span class="inlineequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-redden-03_m0062" display="inline"><semantics><mrow><mrow><mo>(</mo><mrow><mo>−</mo><mfrac><mn>1</mn><mn>5</mn></mfrac><mo>,</mo><mtext> </mtext><mo>−</mo><mfrac><mn>5</mn><mn>2</mn></mfrac></mrow><mo>)</mo></mrow></mrow></semantics></math></span> and <span class="inlineequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-redden-03_m0063" display="inline"><semantics><mrow><mrow><mo>(</mo><mrow><mfrac><mn>7</mn><mrow><mn>10</mn></mrow></mfrac><mo>,</mo><mtext> </mtext><mo>−</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow><mo>)</mo></mrow></mrow></semantics></math></span></p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p204">97.	Given the right triangle formed by the vertices (0, 0), (6, 0), and (6, 8), show that the midpoints of the sides form a right triangle.</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p205">98.	Given the isosceles triangle formed by the vertices (−10, −12), (0, 12), and (10, −12), show that the midpoints of the sides also form an isosceles triangle.</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p206">99.	Calculate the area of the triangle formed by the vertices (−4, −3), (−1, 1), and (2, −3). (Hint: The vertices form an isosceles triangle.)</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p208">100.	Calculate the area of the triangle formed by the vertices (−2, 1), (4, 1), and (1, −5).</p>
+            <p class="simpara">Part D: Discussion Board Topics</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p210">101.	Research and discuss the life and contributions to mathematics of René Descartes.</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p211">102.	Research and discuss the history of the right triangle and the Pythagorean theorem.</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p212">103.	What is a Pythagorean triple? Provide some examples.</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p213">104.	Explain why you cannot use a ruler to calculate distance on a graph.</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p214">105.	How do you bisect a line segment with only a compass and a straightedge?</p>
+        </div>
+        <div class="exercises-math block" id="fwk-redden-ch03_s01_s03_ans01">
+            <h3 class="title editable">Answers</h3>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p12">1: <em class="emphasis">A</em>: (3, 5); <em class="emphasis">B</em>: (−2, 3); <em class="emphasis">C</em>: (−5, 0); <em class="emphasis">D</em>: (1, −3); <em class="emphasis">E</em>: (−3, −4)</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p16">3: <em class="emphasis">A</em>: (0, 6); <em class="emphasis">B</em>: (−4, 3); <em class="emphasis">C</em>: (−8, 0); <em class="emphasis">D</em>: (−6, −6); <em class="emphasis">E</em>: (8, −9)</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p20">5: <em class="emphasis">A</em>: (−10, 25); <em class="emphasis">B</em>: (30, 20); <em class="emphasis">C</em>: (0, 10); <em class="emphasis">D</em>: (15, 0); <em class="emphasis">E</em>: (25, −10)</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p25">7:
+			                </p>
+<div class="informalfigure medium" id="fwk-redden-fig03_x024" condition="redden">
+                    <img src="section_06/18bd04922b971beb4ef9f55491801439.jpg">
+                </div>
+
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p29">9:
+			                </p>
+<div class="informalfigure medium" id="fwk-redden-fig03_x026" condition="redden">
+                    <img src="section_06/1b55719f13aaf9a76fd365674b1484ae.jpg">
+                </div>
+
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p33">11:
+			                </p>
+<div class="informalfigure medium" id="fwk-redden-fig03_x028" condition="redden">
+                    <img src="section_06/9182790aa01a3ad32862db1cf957661c.jpg">
+                </div>
+
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p37">13:
+			                </p>
+<div class="informalfigure medium" id="fwk-redden-fig03_x030" condition="redden">
+                    <img src="section_06/07acc56927414313ca09e735d3c0e66a.jpg">
+                </div>
+
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p41">15:
+			                </p>
+<div class="informalfigure medium" id="fwk-redden-fig03_x032" condition="redden">
+                    <img src="section_06/7e2109257f4d64232c4d847da9829f99.jpg">
+                </div>
+
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p46">17: QII</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p50">19: QIII</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p54">21: QII</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p58">23: QIII</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p62">25: QIV</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p66">27: QII</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p71">29: $1.80</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p75">31: 1980 to 1984, 1996</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p79">33: 100%</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p84">35: $0.30</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p88">37: 1992</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p92">39: 67%</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p97">41:
+			                </p>
+<div class="informalfigure medium" id="fwk-redden-fig03_x036" condition="redden">
+                    <img src="section_06/7da61ed3900be34a58e4df8f1d5f512e.jpg">
+                </div>
+
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p102">43: 15 square units</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p106">45: 28 square units</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p110">47: 4 square units</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p114">49: 9 square units</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p119">51: 5 units</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p123">53: 13 units</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p127">55: 15 units</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p131">57: 13/2 units</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p135">59: 5/3 units</p>
+            <p class="para" id="fwk-redden-ch03_s01_s03_p139">61: <span class="inlineequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-redden-03_m0048" display="inline"><semantics><mrow><msqrt><mrow><mn>10</mn></mrow></msqrt></mrow></semantics></math></span> units</p>
+            <p class="para" id="fwk-redden-ch03_s01_s03_p143">63: <span class="inlineequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-redden-03_m0050" display="inline"><semantics><mrow><mn>2</mn><msqrt><mrow><mn>17</mn></mrow></msqrt></mrow></semantics></math></span> units</p>
+            <p class="para" id="fwk-redden-ch03_s01_s03_p147">65: <span class="inlineequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-redden-03_m0052" display="inline"><semantics><mrow><mn>3</mn><msqrt><mrow><mn>13</mn></mrow></msqrt></mrow></semantics></math></span> units</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p151">67: 2.8 units</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p215">69: Proof</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p217">71: Proof</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p219">73: Proof</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p221">75: Proof</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p223">77: Proof</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p168">79: Perimeter: 24 units; area: 24 square units</p>
+            <p class="para" id="fwk-redden-ch03_s01_s03_p172">81: Perimeter: <span class="inlineequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-redden-03_m0054" display="inline"><semantics><mrow><mn>8</mn><mo>+</mo><mn>4</mn><msqrt><mn>2</mn></msqrt></mrow></semantics></math></span> units; area: 8 square units</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p177">83: (−4, 2)</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p181">85: (0, 0)</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p185">87: (2, 0)</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p189">89: (9/2, −4)</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p193">91: (3/2, 3/2)</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p197">93: (1/2, 1)</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p201">95: (3/4, −5/8)</p>
+            <p class="para editable" id="fwk-redden-ch03_s01_s03_p207">99: 12 square units</p>
+        </div>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s05-09-review-exercises-and-sample-ex.html"><img src="shared/images/batch-left.png"></a> <a href="s05-09-review-exercises-and-sample-ex.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s06-02-graph-by-plotting-points.html">Next Section</a> <a href="s06-02-graph-by-plotting-points.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  <script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=MML_HTMLorMML"></script>
+  
+  
+</body>
+</html>

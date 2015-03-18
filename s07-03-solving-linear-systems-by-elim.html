@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>Solving Linear Systems by Elimination</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s07-02-solving-linear-systems-by-subs.html"><img src="shared/images/batch-left.png"></a> <a href="s07-02-solving-linear-systems-by-subs.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s07-04-applications-of-linear-systems.html">Next Section</a> <a href="s07-04-applications-of-linear-systems.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="section" id="fwk-redden-ch04_s03" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">4.3</span> Solving Linear Systems by Elimination</h2>
+    <div class="learning_objectives editable block" id="fwk-redden-ch04_s03_n01">
+        <h3 class="title">Learning Objectives</h3>
+        <ol class="orderedlist" id="fwk-redden-ch04_s03_l01">
+            <li>Solve linear systems using the elimination method.</li>
+            <li>Solve linear systems with fractions and decimals.</li>
+            <li>Identify the weaknesses and strengths of each method for solving linear systems.</li>
+        </ol>
+    </div>
+    <div class="section" id="fwk-redden-ch04_s03_s01">
+        <h2 class="title editable block">The Elimination Method</h2>
+        <p class="para editable block" id="fwk-redden-ch04_s03_s01_p01">In this section, the goal is to develop another completely algebraic method for solving a system of linear equations. We begin by defining what it means to add equations together. In the following example, notice that if we add the expressions on both sides of the equal sign, we obtain another true statement.</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_033" condition="equation-image">
+            <img src="section_07/173d0e0c3723703b16ef88f1e1635dbd.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s03_s01_p02">This is true in general: if <em class="emphasis">A</em>, <em class="emphasis">B</em>, <em class="emphasis">C</em>, and <em class="emphasis">D</em> are algebraic expressions, then we have the following <span class="margin_term"><a class="glossterm">addition property of equations</a><span class="glossdef">If <em class="emphasis">A</em>, <em class="emphasis">B</em>, <em class="emphasis">C</em>, and <em class="emphasis">D</em> are algebraic expressions, where <em class="emphasis">A</em> = <em class="emphasis">B</em> and <em class="emphasis">C</em> = <em class="emphasis">D</em>, then <em class="emphasis">A</em> + <em class="emphasis">C</em> = <em class="emphasis">B</em> + <em class="emphasis">D</em>.</span></span>:</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_034" condition="equation-image">
+            <img src="section_07/ccd6786d0f37b184acc4ba562761cf47.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s03_s01_p03">For the system</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_035" condition="equation-image">
+            <img src="section_07/265bc8888d28d91f25b480f326db781e.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s03_s01_p04">we add the two equations together:</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_036" condition="equation-image">
+            <img src="section_07/b07f532ee00b53352b626d4636718139.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s03_s01_p05">The sum of <em class="emphasis">y</em> and −<em class="emphasis">y</em> is zero and that term is eliminated. This leaves us with a linear equation with one variable that can be easily solved:</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_037" condition="equation-image">
+            <img src="section_07/e790faa38cc1a8ff95e60f0f20d4665f.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s03_s01_p06">At this point, we have the <em class="emphasis">x</em> coordinate of the simultaneous solution, so all that is left to do is back substitute to find the corresponding <em class="emphasis">y</em>-value.</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_038" condition="equation-image">
+            <img src="section_07/0bea68183cf51f2d8fab648517b086cf.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s03_s01_p07">Hence the solution to the system is (3, 2). This process describes the <span class="margin_term"><a class="glossterm">elimination (or addition) method</a><span class="glossdef">A means of solving a system by adding equivalent equations in such a way as to eliminate a variable.</span></span> for solving linear systems. Of course, the variable is not always so easily eliminated. Typically, we have to find an equivalent system by applying the multiplication property of equality to one or both of the equations as a means to line up one of the variables to eliminate. The goal is to arrange that either the <em class="emphasis">x</em> terms or the <em class="emphasis">y</em> terms are opposites, so that when the equations are added, the terms eliminate. The steps for the elimination method are outlined in the following example.</p>
+        <p class="para block"> </p>
+        <p class="para block" id="fwk-redden-ch04_s03_s01_p08"><strong class="emphasis bold">Example 1:</strong> Solve by elimination: <span class="inlineequation"><math xml:id="fwk-redden-04_m0169" display="inline"><semantics><mrow><mrow><mo>{</mo><mtable><mtr><mtd><mn>2</mn><mi>x</mi><mo>+</mo><mi>y</mi><mo>=</mo><mn>7</mn></mtd></mtr><mtr><mtd><mn>3</mn><mi>x</mi><mo>−</mo><mn>2</mn><mi>y</mi><mo>=</mo><mo>−</mo><mn>7</mn></mtd></mtr></mtable></mrow></mrow></semantics></math></span>.</p>
+        <p class="para editable block" id="fwk-redden-ch04_s03_s01_p09"><strong class="emphasis bold">Solution:</strong></p>
+        <p class="para editable block" id="fwk-redden-ch04_s03_s01_p10"><strong class="emphasis bold">Step 1:</strong> Multiply one, or both, of the equations to set up the elimination of one of the variables. In this example, we will eliminate the variable <em class="emphasis">y</em> by multiplying both sides of the first equation by 2. Take care to distribute.</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_039" condition="equation-image">
+            <img src="section_07/743336c15f15a2080db0b2f39a7adf85.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s03_s01_p11">This leaves us with an equivalent system where the variable <em class="emphasis">y</em> is lined up to eliminate.</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_040" condition="equation-image">
+            <img src="section_07/ff22d3ed360dfa0c5c8571e30613560a.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s03_s01_p12"><strong class="emphasis bold">Step 2:</strong> Add the equations together to eliminate one of the variables.</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_041" condition="equation-image">
+            <img src="section_07/458c8fabedc5d927f9c88c85a4563b66.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s03_s01_p13"><strong class="emphasis bold">Step 3:</strong> Solve for the remaining variable.</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_042" condition="equation-image">
+            <img src="section_07/f507ab4d77c5869d6cd535a7ffecb22d.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s03_s01_p14"><strong class="emphasis bold">Step 3:</strong> Back substitute into either equation or its equivalent equation.</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_043" condition="equation-image">
+            <img src="section_07/5d2e25852faa216f4b2f4c30cfe7ce58.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s03_s01_p15"><strong class="emphasis bold">Step 4:</strong> Check. Remember that the solution must solve both of the original equations.</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_044" condition="equation-image">
+            <img src="section_07/51503fdb26f2b519832c531f12a6b666.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s03_s01_p16">Answer: (1, 5)</p>
+        <p class="para block"> </p>
+        <p class="para editable block" id="fwk-redden-ch04_s03_s01_p17">Occasionally, we will have to multiply both equations to line up one of the variables to eliminate. We want the resulting equivalent equations to have terms with opposite coefficients.</p>
+        <p class="para block"> </p>
+        <p class="para block" id="fwk-redden-ch04_s03_s01_p18"><strong class="emphasis bold">Example 2:</strong> Solve by elimination: <span class="inlineequation"><math xml:id="fwk-redden-04_m0170" display="inline"><semantics><mrow><mrow><mo>{</mo><mtable><mtr><mtd><mn>5</mn><mi>x</mi><mo>−</mo><mn>3</mn><mi>y</mi><mo>=</mo><mo>−</mo><mn>1</mn></mtd></mtr><mtr><mtd><mn>3</mn><mi>x</mi><mo>+</mo><mn>2</mn><mi>y</mi><mo>=</mo><mn>7</mn></mtd></mtr></mtable></mrow></mrow></semantics></math></span>.</p>
+        <p class="para editable block" id="fwk-redden-ch04_s03_s01_p19"><strong class="emphasis bold">Solution:</strong> We choose to eliminate the terms with variable <em class="emphasis">y</em> because the coefficients have different signs. To do this, we first determine the least common multiple of the coefficients; in this case, the LCM(3, 2) is 6. Therefore, multiply both sides of both equations by the appropriate values to obtain coefficients of −6 and 6.</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_045" condition="equation-image">
+            <img src="section_07/2a00878b916ac97a73d53a48fae9f7a0.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s03_s01_p20">This results in the following equivalent system:</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_046" condition="equation-image">
+            <img src="section_07/1da4fe4dd3201097ec1a0cc63193b788.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s03_s01_p21">The <em class="emphasis">y</em> terms are now lined up to eliminate.</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_047" condition="equation-image">
+            <img src="section_07/2555c4c45fa8bd55def7b673d3469063.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s03_s01_p22">Back substitute.</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_048" condition="equation-image">
+            <img src="section_07/803aadc88437ecaf9646cfe34414faaa.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s03_s01_p23">Answer: (1, 2)</p>
+        <p class="para block"> </p>
+        <p class="para editable block" id="fwk-redden-ch04_s03_s01_p24">Sometimes linear systems are not given in standard form. When this is the case, it is best to first rearrange the equations before beginning the steps to solve by elimination.</p>
+        <p class="para block"> </p>
+        <p class="para block" id="fwk-redden-ch04_s03_s01_p25"><strong class="emphasis bold">Example 3:</strong> Solve by elimination: <span class="inlineequation"><math xml:id="fwk-redden-04_m0171" display="inline"><semantics><mrow><mrow><mo>{</mo><mtable columnalign="left"><mtr><mtd><mn>5</mn><mi>x</mi><mo>+</mo><mn>12</mn><mi>y</mi><mo>=</mo><mn>11</mn></mtd></mtr><mtr><mtd><mn>3</mn><mi>y</mi><mo>=</mo><mn>4</mn><mi>x</mi><mo>+</mo><mn>1</mn></mtd></mtr></mtable></mrow></mrow></semantics></math></span>.</p>
+        <p class="para editable block" id="fwk-redden-ch04_s03_s01_p26"><strong class="emphasis bold">Solution:</strong> First, rewrite the second equation in standard form.</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_049" condition="equation-image">
+            <img src="section_07/1927ea5f9525f4e55310923d2019b98f.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s03_s01_p27">This results in the following equivalent system where like terms are aligned in columns:</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_050" condition="equation-image">
+            <img src="section_07/9a0ba3e69df968e978ba9e2ff8765b75.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s03_s01_p28">We can eliminate the term with variable <em class="emphasis">y</em> if we multiply the second equation by −4.</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_051" condition="equation-image">
+            <img src="section_07/c89f19796d28889463443f41516d8279.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s03_s01_p29">Next, we add the equations together,</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_052" condition="equation-image">
+            <img src="section_07/aeaa9e61ef6a98da8a461030ca1ee6cb.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s03_s01_p30">Back substitute.</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_053" condition="equation-image">
+            <img src="section_07/32370b64c0602ac20f638ebd844fd095.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s03_s01_p31">Answer: (1/3, 7/9)</p>
+        <p class="para block"> </p>
+        <p class="para block" id="fwk-redden-ch04_s03_s01_p32"><strong class="emphasis bold">Try this!</strong> Solve by elimination: <span class="inlineequation"><math xml:id="fwk-redden-04_m0172" display="inline"><semantics><mrow><mrow><mo>{</mo><mtable><mtr><mtd><mn>2</mn><mi>x</mi><mo>+</mo><mi>y</mi><mo>=</mo><mo>−</mo><mn>3</mn></mtd></mtr><mtr><mtd><mo>−</mo><mn>3</mn><mi>x</mi><mo>−</mo><mn>2</mn><mi>y</mi><mo>=</mo><mn>4</mn></mtd></mtr></mtable></mrow></mrow></semantics></math></span>.</p>
+        <p class="para editable block" id="fwk-redden-ch04_s03_s01_p33">Answer: (−2, 1)</p>
+        <div class="video editable block" id="fwk-redden-ch04_s03_s01_n01">
+            <h3 class="title">Video Solution</h3>
+            <a data-iframe-code='&lt;iframe src="http://www.youtube.com/v/I29QHszvVYk" condition="http://img.youtube.com/vi/I29QHszvVYk/0.jpg" vendor="youtube" width="450" height="340" scalefit="1"&gt;&lt;/iframe&gt;' href="http://www.youtube.com/v/I29QHszvVYk" class="replaced-iframe" onclick="return replaceIframe(this)">(click to see video)</a>
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s03_s01_p34">At this point, we explore what happens when solving dependent and inconsistent systems using the elimination method.</p>
+        <p class="para block"> </p>
+        <p class="para block" id="fwk-redden-ch04_s03_s01_p35"><strong class="emphasis bold">Example 4:</strong> Solve by elimination: <span class="inlineequation"><math xml:id="fwk-redden-04_m0173" display="inline"><semantics><mrow><mrow><mo>{</mo><mtable><mtr><mtd><mn>3</mn><mi>x</mi><mo>−</mo><mi>y</mi><mo>=</mo><mn>7</mn></mtd></mtr><mtr><mtd><mn>6</mn><mi>x</mi><mo>−</mo><mn>2</mn><mi>y</mi><mo>=</mo><mn>14</mn></mtd></mtr></mtable></mrow></mrow></semantics></math></span>.</p>
+        <p class="para editable block" id="fwk-redden-ch04_s03_s01_p36"><strong class="emphasis bold">Solution:</strong> To eliminate the variable <em class="emphasis">x</em>, we could multiply the first equation by −2.</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_054" condition="equation-image">
+            <img src="section_07/1d9407f5305dc6fd9b880c0ce3353781.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s03_s01_p37">Now adding the equations we have</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_055" condition="equation-image">
+            <img src="section_07/b7a9a659691d86b629a15b3e80d19dfe.jpg">
+        </div>
+        <p class="para block" id="fwk-redden-ch04_s03_s01_p38">A true statement indicates that this is a dependent system. The lines coincide, and we need <em class="emphasis">y</em> in terms of <em class="emphasis">x</em> to present the solution set in the form <span class="inlineequation"><math xml:id="fwk-redden-04_m0174" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mtext> </mtext><mi>m</mi><mi>x</mi><mo>+</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></semantics></math></span>. Choose one of the original equations and solve for <em class="emphasis">y</em>. Since the equations are equivalent, it does not matter which one we choose.</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_056" condition="equation-image">
+            <img src="section_07/eebf650c78b349f182919a22e29901eb.jpg">
+        </div>
+        <p class="para block" id="fwk-redden-ch04_s03_s01_p39">Answer: <span class="inlineequation"><math xml:id="fwk-redden-04_m0175" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mtext> </mtext><mn>3</mn><mi>x</mi><mo>−</mo><mn>7</mn><mo stretchy="false">)</mo></mrow></semantics></math></span></p>
+        <p class="para block"> </p>
+        <p class="para block" id="fwk-redden-ch04_s03_s01_p40"><strong class="emphasis bold">Example 5:</strong> Solve by elimination: <span class="inlineequation"><math xml:id="fwk-redden-04_m0176" display="inline"><semantics><mrow><mrow><mo>{</mo><mtable><mtr><mtd><mo>−</mo><mi>x</mi><mo>+</mo><mn>3</mn><mi>y</mi><mo>=</mo><mn>9</mn></mtd></mtr><mtr><mtd><mo> </mo><mn>2</mn><mi>x</mi><mo>−</mo><mn>6</mn><mi>y</mi><mo>=</mo><mn>12</mn></mtd></mtr></mtable></mrow></mrow></semantics></math></span>.</p>
+        <p class="para editable block" id="fwk-redden-ch04_s03_s01_p41"><strong class="emphasis bold">Solution:</strong> We can eliminate <em class="emphasis">x</em> by multiplying the first equation by 2.</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_057" condition="equation-image">
+            <img src="section_07/99edf5d606b0c530068a8bcd619af408.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s03_s01_p42">Now adding the equations we have</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_058" condition="equation-image">
+            <img src="section_07/06d21def55e9a4bcb9454f11a5e2d7c9.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s03_s01_p43">A false statement indicates that the system is inconsistent. The lines are parallel and do not intersect.</p>
+        <p class="para block" id="fwk-redden-ch04_s03_s01_p44">Answer: No solution, <span class="inlineequation"><math xml:id="fwk-redden-04_m0177" display="inline"><semantics><mo>∅</mo> </semantics></math></span></p>
+        <p class="para block"> </p>
+        <p class="para block" id="fwk-redden-ch04_s03_s01_p45"><strong class="emphasis bold">Try this!</strong> Solve by elimination: <span class="inlineequation"><math xml:id="fwk-redden-04_m0178" display="inline"><semantics><mrow><mrow><mo>{</mo><mtable><mtr><mtd><mn>3</mn><mi>x</mi><mo>+</mo><mn>15</mn><mi>y</mi><mo>=</mo><mo>−</mo><mn>15</mn></mtd></mtr><mtr><mtd><mn>2</mn><mi>x</mi><mo>+</mo><mn>10</mn><mi>y</mi><mo>=</mo><mn>30</mn></mtd></mtr></mtable></mrow></mrow></semantics></math></span>.</p>
+        <p class="para block" id="fwk-redden-ch04_s03_s01_p46">Answer: No solution, <span class="inlineequation"><math xml:id="fwk-redden-04_m0179" display="inline"><semantics><mo>∅</mo> </semantics></math></span></p>
+        <div class="video editable block" id="fwk-redden-ch04_s03_s01_n02">
+            <h3 class="title">Video Solution</h3>
+            <a data-iframe-code='&lt;iframe src="http://www.youtube.com/v/wYwQpiXmpLM" condition="http://img.youtube.com/vi/wYwQpiXmpLM/0.jpg" vendor="youtube" width="450" height="340" scalefit="1"&gt;&lt;/iframe&gt;' href="http://www.youtube.com/v/wYwQpiXmpLM" class="replaced-iframe" onclick="return replaceIframe(this)">(click to see video)</a>
+        </div>
+    </div>
+    <div class="section" id="fwk-redden-ch04_s03_s02">
+        <h2 class="title editable block">Clearing Fractions and Decimals</h2>
+        <p class="para editable block" id="fwk-redden-ch04_s03_s02_p01">Given a linear system where the equations have fractional coefficients, it is usually best to clear the fractions before beginning the elimination method.</p>
+        <p class="para block"> </p>
+        <p class="para block" id="fwk-redden-ch04_s03_s02_p02"><strong class="emphasis bold">Example 6:</strong> Solve: <span class="inlineequation"><math xml:id="fwk-redden-04_m0180" display="inline"><semantics><mrow><mrow><mo>{</mo><mtable><mtr><mtd><mo>−</mo><mfrac><mn>1</mn><mrow><mn>10</mn></mrow></mfrac><mi>x</mi><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>y</mi><mo>=</mo><mfrac><mn>4</mn><mn>5</mn></mfrac></mtd></mtr><mtr><mtd><mo> </mo><mfrac><mn>1</mn><mn>7</mn></mfrac><mi>x</mi><mo>+</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mi>y</mi><mo>=</mo><mo>−</mo><mfrac><mn>2</mn><mrow><mn>21</mn></mrow></mfrac></mtd></mtr></mtable></mrow></mrow></semantics></math></span>.</p>
+        <p class="para editable block" id="fwk-redden-ch04_s03_s02_p03"><strong class="emphasis bold">Solution:</strong> Recall that we can clear fractions by multiplying both sides of an equation by the least common denominator (LCD). Take care to distribute and then simplify.</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_059" condition="equation-image">
+            <img src="section_07/3adacfd50c46625f3150efb5eb1f3da0.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s03_s02_p04">This results in an equivalent system where the equations have integer coefficients,</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_060" condition="equation-image">
+            <img src="section_07/9021dd981ec5c71589eb8894ef1e753b.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s03_s02_p05">Solve using the elimination method.</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_061" condition="equation-image">
+            <img src="section_07/f354dd4f8b76791f867c4c759feb0164.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s03_s02_p06">Back substitute.</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_062" condition="equation-image">
+            <img src="section_07/4ccd9c73180c7e7d52b883c4425fb1b8.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s03_s02_p07">Answer: (−3, 1)</p>
+        <p class="para block"> </p>
+        <p class="para editable block" id="fwk-redden-ch04_s03_s02_p08">We can use a similar technique to clear decimals before solving.</p>
+        <p class="para block"> </p>
+        <p class="para block" id="fwk-redden-ch04_s03_s02_p09"><strong class="emphasis bold">Example 7:</strong> Solve: <span class="inlineequation"><math xml:id="fwk-redden-04_m0181" display="inline"><semantics><mrow><mrow><mo>{</mo><mtable><mtr><mtd><mn>3</mn><mi>x</mi><mo>−</mo><mn>0.6</mn><mi>y</mi><mo>=</mo><mo>−</mo><mn>0.9</mn></mtd></mtr><mtr><mtd><mo>−</mo><mn>0.5</mn><mi>x</mi><mo>+</mo><mn>0.12</mn><mi>y</mi><mo>=</mo><mn>0.16</mn></mtd></mtr></mtable></mrow></mrow></semantics></math></span>.</p>
+        <p class="para editable block" id="fwk-redden-ch04_s03_s02_p10"><strong class="emphasis bold">Solution:</strong> Multiply each equation by the lowest power of 10 necessary to result in integer coefficients. In this case, multiply the first equation by 10 and the second equation by 100.</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_063" condition="equation-image">
+            <img src="section_07/0c3d8bc1a0032003f25b4626f3670ac2.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s03_s02_p11">This results in an equivalent system where the equations have integer coefficients:</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_064" condition="equation-image">
+            <img src="section_07/cfb8e967e556ba583ad06ffe93666de7.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s03_s02_p12">Solve using the elimination method.</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_065" condition="equation-image">
+            <img src="section_07/570da8f1a8be93e32e42cb8c6dbd009f.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s03_s02_p13">Back substitute.</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_066" condition="equation-image">
+            <img src="section_07/76d47611411bbf6f96fd24a06b7056bc.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s03_s02_p14">Answer: (−0.2, 0.5)</p>
+        <p class="para block"> </p>
+        <p class="para block" id="fwk-redden-ch04_s03_s02_p15"><strong class="emphasis bold">Try this!</strong> Solve using elimination: <span class="inlineequation"><math xml:id="fwk-redden-04_m0182" display="inline"><semantics><mrow><mrow><mo>{</mo><mrow><mtable><mtr><mtd><mrow><mfrac><mn>1</mn><mn>3</mn></mfrac><mi>x</mi><mo>−</mo><mfrac><mn>2</mn><mn>3</mn></mfrac><mi>y</mi><mo>=</mo><mn>3</mn></mrow></mtd></mtr><mtr><mtd><mrow><mfrac><mn>1</mn><mn>3</mn></mfrac><mi>x</mi><mo>−</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>y</mi><mo>=</mo><mfrac><mn>8</mn><mn>3</mn></mfrac></mrow></mtd></mtr></mtable></mrow></mrow></mrow></semantics></math></span>.</p>
+        <p class="para editable block" id="fwk-redden-ch04_s03_s02_p16">Answer: (5, −2)</p>
+        <div class="video editable block" id="fwk-redden-ch04_s03_s02_n01">
+            <h3 class="title">Video Solution</h3>
+            <a data-iframe-code='&lt;iframe src="http://www.youtube.com/v/ITFSjlYLJL8" condition="http://img.youtube.com/vi/ITFSjlYLJL8/0.jpg" vendor="youtube" width="450" height="340" scalefit="1"&gt;&lt;/iframe&gt;' href="http://www.youtube.com/v/ITFSjlYLJL8" class="replaced-iframe" onclick="return replaceIframe(this)">(click to see video)</a>
+        </div>
+    </div>
+    <div class="section" id="fwk-redden-ch04_s03_s03">
+        <h2 class="title editable block">Summary of the Methods for Solving Linear Systems</h2>
+        <p class="para editable block" id="fwk-redden-ch04_s03_s03_p01">We have developed three methods for solving linear systems of two equations with two variables. In this section, we summarize the strengths and weaknesses of each method.</p>
+        <p class="para editable block" id="fwk-redden-ch04_s03_s03_p02">The graphing method is useful for understanding what a system of equations is and what the solutions must look like. When the equations of a system are graphed on the same set of axes, we can see that the solution is the point where the graphs intersect. The graphing is made easy when the equations are in slope-intercept form. For example,</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_067" condition="equation-image">
+            <img src="section_07/079c0bbca9d8571fd41bc23308efdc4f.jpg">
+        </div>
+        <div class="informalfigure large block" id="fwk-redden-fig04_x024" condition="redden">
+            <img src="section_07/628c017ebc3746e8efbfd75a08d29d74.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s03_s03_p03">The simultaneous solution (−1, 10) corresponds to the point of intersection. One drawback of this method is that it is very inaccurate. When the coordinates of the solution are not integers, the method is practically unusable. If we have a choice, we typically avoid this method in favor of the more accurate algebraic techniques.</p>
+        <p class="para editable block" id="fwk-redden-ch04_s03_s03_p04">The substitution method, on the other hand, is a completely algebraic method. It requires you to solve for one of the variables and substitute the result into the other equation. The resulting equation has one variable for which you can solve. This method is particularly useful when there is a variable within the system with coefficient of 1. For example,</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_068" condition="equation-image">
+            <img src="section_07/4858a37cab103849e667d0752497867d.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s03_s03_p05">In this case, it is easy to solve for <em class="emphasis">y</em> in the first equation and then substitute the result into the other equation. One drawback of this method is that it often leads to equivalent equations with fractional coefficients, which are tedious to work with. If there is not a coefficient of 1, then it usually is best to choose the elimination method.</p>
+        <p class="para editable block" id="fwk-redden-ch04_s03_s03_p06">The elimination method is a completely algebraic method that makes use of the addition property of equations. We multiply one or both of the equations to obtain equivalent equations where one of the variables is eliminated if we add them together. For example,</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_069" condition="equation-image">
+            <img src="section_07/0eb6eaf0a40361ab372dda0fc4ba5020.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s03_s03_p07">Here we multiply both sides of the first equation by 5 and both sides of the second equation by −2. This results in an equivalent system where the variable <em class="emphasis">x</em> is eliminated when we add the equations together. Of course, there are other combinations of numbers that achieve the same result. We could even choose to eliminate the variable <em class="emphasis">y</em>. No matter which variable is eliminated first, the solution will be the same. Note that the substitution method, in this case, would require tedious calculations with fractional coefficients. One weakness of the elimination method, as we will see later in our study of algebra, is that it does not always work for nonlinear systems.</p>
+        <div class="key_takeaways editable block" id="fwk-redden-ch04_s03_s03_n01">
+            <h3 class="title">Key Takeaways</h3>
+            <ul class="itemizedlist" id="fwk-redden-ch04_s03_s03_l01">
+                <li>The elimination method is a completely algebraic method for solving a system of equations.</li>
+                <li>Multiply one or both of the equations in a system by certain numbers to obtain an equivalent system consisting of like terms with opposite coefficients. Adding these equivalent equations together eliminates a variable, and the resulting equation has one variable for which you can solve.</li>
+                <li>It is a good practice to first rewrite the equations in standard form before beginning the elimination method.</li>
+                <li>When the value of one of the variables is determined, back substitute into one of the original equations, or their equivalent equations, and determine the corresponding value of the other variable.</li>
+            </ul>
+        </div>
+        <div class="exercises-math block" id="fwk-redden-ch04_s03_s03_n02">
+            <h3 class="title editable">Topic Exercises</h3>
+            <p class="simpara">Part A: Elimination Method</p>
+            <p class="para editable" id="fwk-redden-ch04_s03_s03_p08"><em class="emphasis bolditalic">Solve by elimination.</em></p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p09">1.	<span class="inlineequation"><math xml:id="fwk-redden-04_m0183" display="inline"><semantics><mrow><mrow><mo>{</mo><mtable><mtr><mtd><mi>x</mi><mo>+</mo><mi>y</mi><mo>=</mo><mn>3</mn></mtd></mtr><mtr><mtd><mn>2</mn><mi>x</mi><mo>−</mo><mi>y</mi><mo>=</mo><mn>9</mn></mtd></mtr></mtable></mrow></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p11">2.	<span class="inlineequation"><math xml:id="fwk-redden-04_m0184" display="inline"><semantics><mrow><mrow><mo>{</mo><mtable><mtr><mtd><mi>x</mi><mo>−</mo><mi>y</mi><mo>=</mo><mo>−</mo><mn>6</mn></mtd></mtr><mtr><mtd><mn>5</mn><mi>x</mi><mo>+</mo><mi>y</mi><mo>=</mo><mo>−</mo><mn>18</mn></mtd></mtr></mtable></mrow></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p13">3.	<span class="inlineequation"><math xml:id="fwk-redden-04_m0185" display="inline"><semantics><mrow><mrow><mo>{</mo><mtable><mtr><mtd><mi>x</mi><mo>+</mo><mn>3</mn><mi>y</mi><mo>=</mo><mn>5</mn></mtd></mtr><mtr><mtd><mo>−</mo><mi>x</mi><mo>−</mo><mn>2</mn><mi>y</mi><mo>=</mo><mn>0</mn></mtd></mtr></mtable></mrow></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p15">4.	<span class="inlineequation"><math xml:id="fwk-redden-04_m0186" display="inline"><semantics><mrow><mrow><mo>{</mo><mtable><mtr><mtd><mo>−</mo><mi>x</mi><mo>+</mo><mn>4</mn><mi>y</mi><mo>=</mo><mn>4</mn></mtd></mtr><mtr><mtd><mi>x</mi><mo>−</mo><mi>y</mi><mo>=</mo><mo>−</mo><mn>7</mn></mtd></mtr></mtable></mrow></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p17">5.	<span class="inlineequation"><math xml:id="fwk-redden-04_m0187" display="inline"><semantics><mrow><mrow><mo>{</mo><mtable><mtr><mtd><mo>−</mo><mi>x</mi><mo>+</mo><mi>y</mi><mo>=</mo><mn>2</mn></mtd></mtr><mtr><mtd><mi>x</mi><mo>−</mo><mi>y</mi><mo>=</mo><mo>−</mo><mn>3</mn></mtd></mtr></mtable></mrow></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p19">6.	<span class="inlineequation"><math xml:id="fwk-redden-04_m0189" display="inline"><semantics><mrow><mrow><mo>{</mo><mtable><mtr><mtd><mn>3</mn><mi>x</mi><mo>−</mo><mi>y</mi><mo>=</mo><mo>−</mo><mn>2</mn></mtd></mtr><mtr><mtd><mn>6</mn><mi>x</mi><mo>+</mo><mn>4</mn><mi>y</mi><mo>=</mo><mn>2</mn></mtd></mtr></mtable></mrow></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p21">7.	<span class="inlineequation"><math xml:id="fwk-redden-04_m0190" display="inline"><semantics><mrow><mrow><mo>{</mo><mtable><mtr><mtd><mn>5</mn><mi>x</mi><mo>+</mo><mn>2</mn><mi>y</mi><mo>=</mo><mo>−</mo><mn>3</mn></mtd></mtr><mtr><mtd><mn>10</mn><mi>x</mi><mo>−</mo><mi>y</mi><mo>=</mo><mn>4</mn></mtd></mtr></mtable></mrow></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p23">8.	<span class="inlineequation"><math xml:id="fwk-redden-04_m0191" display="inline"><semantics><mrow><mrow><mo>{</mo><mtable><mtr><mtd><mo>−</mo><mn>2</mn><mi>x</mi><mo>+</mo><mn>14</mn><mi>y</mi><mo>=</mo><mn>28</mn></mtd></mtr><mtr><mtd><mi>x</mi><mo>−</mo><mn>7</mn><mi>y</mi><mo>=</mo><mn>21</mn></mtd></mtr></mtable></mrow></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p25">9.	<span class="inlineequation"><math xml:id="fwk-redden-04_m0193" display="inline"><semantics><mrow><mrow><mo>{</mo><mtable><mtr><mtd><mo>−</mo><mn>2</mn><mi>x</mi><mo>+</mo><mi>y</mi><mo>=</mo><mn>4</mn></mtd></mtr><mtr><mtd><mn>12</mn><mi>x</mi><mo>−</mo><mn>6</mn><mi>y</mi><mo>=</mo><mo>−</mo><mn>24</mn></mtd></mtr></mtable></mrow></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p27">10.	<span class="inlineequation"><math xml:id="fwk-redden-04_m0195" display="inline"><semantics><mrow><mrow><mo>{</mo><mtable><mtr><mtd><mi>x</mi><mo>+</mo><mn>8</mn><mi>y</mi><mo>=</mo><mn>3</mn></mtd></mtr><mtr><mtd><mn>3</mn><mi>x</mi><mo>+</mo><mn>12</mn><mi>y</mi><mo>=</mo><mn>6</mn></mtd></mtr></mtable></mrow></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p29">11.	<span class="inlineequation"><math xml:id="fwk-redden-04_m0196" display="inline"><semantics><mrow><mrow><mo>{</mo><mtable><mtr><mtd><mn>2</mn><mi>x</mi><mo>−</mo><mn>3</mn><mi>y</mi><mo>=</mo><mn>15</mn></mtd></mtr><mtr><mtd><mn>4</mn><mi>x</mi><mo>+</mo><mn>10</mn><mi>y</mi><mo>=</mo><mn>14</mn></mtd></mtr></mtable></mrow></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p31">12.	<span class="inlineequation"><math xml:id="fwk-redden-04_m0197" display="inline"><semantics><mrow><mrow><mo>{</mo><mtable><mtr><mtd><mn>4</mn><mi>x</mi><mo>+</mo><mn>3</mn><mi>y</mi><mo>=</mo><mo>−</mo><mn>10</mn></mtd></mtr><mtr><mtd><mn>3</mn><mi>x</mi><mo>−</mo><mn>9</mn><mi>y</mi><mo>=</mo><mn>15</mn></mtd></mtr></mtable></mrow></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p33">13.	<span class="inlineequation"><math xml:id="fwk-redden-04_m0198" display="inline"><semantics><mrow><mrow><mo>{</mo><mtable><mtr><mtd><mo>−</mo><mn>4</mn><mi>x</mi><mo>−</mo><mn>5</mn><mi>y</mi><mo>=</mo><mo>−</mo><mn>3</mn></mtd></mtr><mtr><mtd><mn>8</mn><mi>x</mi><mo>+</mo><mn>3</mn><mi>y</mi><mo>=</mo><mo>−</mo><mn>15</mn></mtd></mtr></mtable></mrow></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p35">14.	<span class="inlineequation"><math xml:id="fwk-redden-04_m0199" display="inline"><semantics><mrow><mrow><mo>{</mo><mtable><mtr><mtd><mo>−</mo><mn>2</mn><mi>x</mi><mo>+</mo><mn>7</mn><mi>y</mi><mo>=</mo><mn>56</mn></mtd></mtr><mtr><mtd><mn>4</mn><mi>x</mi><mo>−</mo><mn>2</mn><mi>y</mi><mo>=</mo><mo>−</mo><mn>112</mn></mtd></mtr></mtable></mrow></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p37">15.	<span class="inlineequation"><math xml:id="fwk-redden-04_m0200" display="inline"><semantics><mrow><mrow><mo>{</mo><mtable><mtr><mtd><mo>−</mo><mn>9</mn><mi>x</mi><mo>−</mo><mn>15</mn><mi>y</mi><mo>=</mo><mo>−</mo><mn>15</mn></mtd></mtr><mtr><mtd><mn>3</mn><mi>x</mi><mo>+</mo><mn>5</mn><mi>y</mi><mo>=</mo><mo>−</mo><mn>10</mn></mtd></mtr></mtable></mrow></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p39">16.	<span class="inlineequation"><math xml:id="fwk-redden-04_m0202" display="inline"><semantics><mrow><mrow><mo>{</mo><mtable><mtr><mtd><mn>6</mn><mi>x</mi><mo>−</mo><mn>7</mn><mi>y</mi><mo>=</mo><mn>4</mn></mtd></mtr><mtr><mtd><mn>2</mn><mi>x</mi><mo>+</mo><mn>6</mn><mi>y</mi><mo>=</mo><mo>−</mo><mn>7</mn></mtd></mtr></mtable></mrow></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p41">17.	<span class="inlineequation"><math xml:id="fwk-redden-04_m0203" display="inline"><semantics><mrow><mrow><mo>{</mo><mtable><mtr><mtd><mn>4</mn><mi>x</mi><mo>+</mo><mn>2</mn><mi>y</mi><mo>=</mo><mn>4</mn></mtd></mtr><mtr><mtd><mo>−</mo><mn>5</mn><mi>x</mi><mo>−</mo><mn>3</mn><mi>y</mi><mo>=</mo><mo>−</mo><mn>7</mn></mtd></mtr></mtable></mrow></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p43">18.	<span class="inlineequation"><math xml:id="fwk-redden-04_m0204" display="inline"><semantics><mrow><mrow><mo>{</mo><mtable><mtr><mtd><mn>5</mn><mi>x</mi><mo>−</mo><mn>3</mn><mi>y</mi><mo>=</mo><mo>−</mo><mn>1</mn></mtd></mtr><mtr><mtd><mn>3</mn><mi>x</mi><mo>+</mo><mn>2</mn><mi>y</mi><mo>=</mo><mn>7</mn></mtd></mtr></mtable></mrow></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p45">19.	<span class="inlineequation"><math xml:id="fwk-redden-04_m0205" display="inline"><semantics><mrow><mrow><mo>{</mo><mtable><mtr><mtd><mn>7</mn><mi>x</mi><mo>+</mo><mn>3</mn><mi>y</mi><mo>=</mo><mn>9</mn></mtd></mtr><mtr><mtd><mn>2</mn><mi>x</mi><mo>+</mo><mn>5</mn><mi>y</mi><mo>=</mo><mo>−</mo><mn>14</mn></mtd></mtr></mtable></mrow></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p47">20.	<span class="inlineequation"><math xml:id="fwk-redden-04_m0206" display="inline"><semantics><mrow><mrow><mo>{</mo><mtable><mtr><mtd><mn>9</mn><mi>x</mi><mo>−</mo><mn>3</mn><mi>y</mi><mo>=</mo><mn>3</mn></mtd></mtr><mtr><mtd><mn>7</mn><mi>x</mi><mo>+</mo><mn>2</mn><mi>y</mi><mo>=</mo><mo>−</mo><mn>15</mn></mtd></mtr></mtable></mrow></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p49">21.	<span class="inlineequation"><math xml:id="fwk-redden-04_m0207" display="inline"><semantics><mrow><mrow><mo>{</mo><mtable><mtr><mtd><mn>5</mn><mi>x</mi><mo>−</mo><mn>3</mn><mi>y</mi><mo>=</mo><mo>−</mo><mn>7</mn></mtd></mtr><mtr><mtd><mo>−</mo><mn>7</mn><mi>x</mi><mo>+</mo><mn>6</mn><mi>y</mi><mo>=</mo><mn>11</mn></mtd></mtr></mtable></mrow></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p51">22.	<span class="inlineequation"><math xml:id="fwk-redden-04_m0208" display="inline"><semantics><mrow><mrow><mo>{</mo><mtable><mtr><mtd><mn>2</mn><mi>x</mi><mo>+</mo><mn>9</mn><mi>y</mi><mo>=</mo><mn>8</mn></mtd></mtr><mtr><mtd><mn>3</mn><mi>x</mi><mo>+</mo><mn>7</mn><mi>y</mi><mo>=</mo><mo>−</mo><mn>1</mn></mtd></mtr></mtable></mrow></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p53">23.	<span class="inlineequation"><math xml:id="fwk-redden-04_m0209" display="inline"><semantics><mrow><mrow><mo>{</mo><mtable><mtr><mtd><mn>2</mn><mi>x</mi><mo>+</mo><mn>2</mn><mi>y</mi><mo>=</mo><mn>5</mn></mtd></mtr><mtr><mtd><mn>3</mn><mi>x</mi><mo>+</mo><mn>3</mn><mi>y</mi><mo>=</mo><mo>−</mo><mn>5</mn></mtd></mtr></mtable></mrow></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p55">24.	<span class="inlineequation"><math xml:id="fwk-redden-04_m0211" display="inline"><semantics><mrow><mrow><mo>{</mo><mtable><mtr><mtd><mo>−</mo><mn>3</mn><mi>x</mi><mo>+</mo><mn>6</mn><mi>y</mi><mo>=</mo><mo>−</mo><mn>12</mn></mtd></mtr><mtr><mtd><mn>2</mn><mi>x</mi><mo>−</mo><mn>4</mn><mi>y</mi><mo>=</mo><mn>8</mn></mtd></mtr></mtable></mrow></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p57">25.	<span class="inlineequation"><math xml:id="fwk-redden-04_m0213" display="inline"><semantics><mrow><mrow><mo>{</mo><mtable><mtr><mtd><mn>25</mn><mi>x</mi><mo>+</mo><mn>15</mn><mi>y</mi><mo>=</mo><mo>−</mo><mn>1</mn></mtd></mtr><mtr><mtd><mn>15</mn><mi>x</mi><mo>+</mo><mn>10</mn><mi>y</mi><mo>=</mo><mo>−</mo><mn>1</mn></mtd></mtr></mtable></mrow></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p59">26.	<span class="inlineequation"><math xml:id="fwk-redden-04_m0214" display="inline"><semantics><mrow><mrow><mo>{</mo><mtable><mtr><mtd><mn>2</mn><mi>x</mi><mo>−</mo><mn>3</mn><mi>y</mi><mo>=</mo><mn>2</mn></mtd></mtr><mtr><mtd><mn>18</mn><mi>x</mi><mo>−</mo><mn>12</mn><mi>y</mi><mo>=</mo><mn>5</mn></mtd></mtr></mtable></mrow></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p61">27.	<span class="inlineequation"><math xml:id="fwk-redden-04_m0215" display="inline"><semantics><mrow><mrow><mo>{</mo><mrow><mtable><mtr><mtd><mrow><mi>y</mi><mo>=</mo><mo>−</mo><mn>2</mn><mi>x</mi><mo>−</mo><mn>3</mn></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn>3</mn><mi>x</mi><mo>−</mo><mn>2</mn><mi>y</mi><mo>=</mo><mn>4</mn></mrow></mtd></mtr></mtable></mrow></mrow></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p63">28.	<span class="inlineequation"><math xml:id="fwk-redden-04_m0216" display="inline"><semantics><mrow><mrow><mo>{</mo><mtable columnalign="left"><mtr><mtd><mn>28</mn><mi>x</mi><mo>+</mo><mn>6</mn><mi>y</mi><mo>=</mo><mn>9</mn></mtd></mtr><mtr><mtd><mn>6</mn><mi>y</mi><mo>=</mo><mn>4</mn><mi>x</mi><mo>−</mo><mn>15</mn></mtd></mtr></mtable></mrow></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p65">29.	<span class="inlineequation"><math xml:id="fwk-redden-04_m0217" display="inline"><semantics><mrow><mrow><mo>{</mo><mtable><mtr><mtd><mi>y</mi><mo>=</mo><mn>5</mn><mi>x</mi><mo>+</mo><mn>15</mn></mtd></mtr><mtr><mtd><mi>y</mi><mo>=</mo><mo>−</mo><mn>5</mn><mi>x</mi><mo>+</mo><mn>5</mn></mtd></mtr></mtable></mrow></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p67">30.	<span class="inlineequation"><math xml:id="fwk-redden-04_m0218" display="inline"><semantics><mrow><mrow><mo>{</mo><mtable><mtr><mtd><mn>2</mn><mi>x</mi><mo>−</mo><mn>3</mn><mi>y</mi><mo>=</mo><mn>9</mn></mtd></mtr><mtr><mtd><mn>5</mn><mi>x</mi><mo>−</mo><mn>8</mn><mi>y</mi><mo>=</mo><mo>−</mo><mn>16</mn></mtd></mtr></mtable></mrow><mtext> </mtext></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p69">31.	<span class="inlineequation"><math xml:id="fwk-redden-04_m0219" display="inline"><semantics><mrow><mrow><mo>{</mo><mtable><mtr><mtd><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>x</mi><mo>−</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mi>y</mi><mo>=</mo><mfrac><mn>1</mn><mn>6</mn></mfrac></mtd></mtr><mtr><mtd><mfrac><mn>5</mn><mn>2</mn></mfrac><mi>x</mi><mo>+</mo><mi>y</mi><mo>=</mo><mfrac><mn>7</mn><mn>2</mn></mfrac></mtd></mtr></mtable></mrow></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p71">32.	<span class="inlineequation"><math xml:id="fwk-redden-04_m0220" display="inline"><semantics><mrow><mrow><mo>{</mo><mtable><mtr><mtd><mfrac><mn>1</mn><mn>4</mn></mfrac><mi>x</mi><mo>−</mo><mfrac><mn>1</mn><mn>9</mn></mfrac><mi>y</mi><mo>=</mo><mn>1</mn></mtd></mtr><mtr><mtd><mi>x</mi><mo>+</mo><mi>y</mi><mo>=</mo><mfrac><mn>3</mn><mn>4</mn></mfrac></mtd></mtr></mtable></mrow></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p73">33.	<span class="inlineequation"><math xml:id="fwk-redden-04_m0221" display="inline"><semantics><mrow><mrow><mo>{</mo><mtable><mtr><mtd><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>x</mi><mo>−</mo><mfrac><mn>1</mn><mn>4</mn></mfrac><mi>y</mi><mo>=</mo><mfrac><mn>1</mn><mn>3</mn></mfrac></mtd></mtr><mtr><mtd><mfrac><mn>1</mn><mn>4</mn></mfrac><mi>x</mi><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>y</mi><mo>=</mo><mo>−</mo><mfrac><mrow><mn>19</mn></mrow><mn>6</mn></mfrac></mtd></mtr></mtable></mrow></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p75">34.	<span class="inlineequation"><math xml:id="fwk-redden-04_m0222" display="inline"><semantics><mrow><mrow><mo>{</mo><mtable><mtr><mtd><mo>−</mo><mfrac><mrow><mn>14</mn></mrow><mn>3</mn></mfrac><mi>x</mi><mo>+</mo><mn>2</mn><mi>y</mi><mo>=</mo><mn>4</mn></mtd></mtr><mtr><mtd><mo>−</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mi>x</mi><mo>+</mo><mfrac><mn>1</mn><mn>7</mn></mfrac><mi>y</mi><mo>=</mo><mfrac><mn>4</mn><mrow><mn>21</mn></mrow></mfrac></mtd></mtr></mtable></mrow></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p77">35.	<span class="inlineequation"><math xml:id="fwk-redden-04_m0224" display="inline"><semantics><mrow><mrow><mo>{</mo><mtable><mtr><mtd><mn>0.025</mn><mi>x</mi><mo>+</mo><mn>0.1</mn><mi>y</mi><mo>=</mo><mn>0.5</mn></mtd></mtr><mtr><mtd><mn>0.11</mn><mi>x</mi><mo>+</mo><mn>0.04</mn><mi>y</mi><mo>=</mo><mo>−</mo><mn>0.2</mn></mtd></mtr></mtable></mrow></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p79">36.	<span class="inlineequation"><math xml:id="fwk-redden-04_m0225" display="inline"><semantics><mrow><mrow><mo>{</mo><mtable><mtr><mtd><mn>1.3</mn><mi>x</mi><mo>+</mo><mn>0.1</mn><mi>y</mi><mo>=</mo><mn>0.35</mn></mtd></mtr><mtr><mtd><mn>0.5</mn><mi>x</mi><mo>+</mo><mi>y</mi><mo>=</mo><mo>−</mo><mn>2.75</mn></mtd></mtr></mtable></mrow></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p81">37.	<span class="inlineequation"><math xml:id="fwk-redden-04_m0226" display="inline"><semantics><mrow><mrow><mo>{</mo><mtable><mtr><mtd><mi>x</mi><mo>+</mo><mi>y</mi><mo>=</mo><mn>5</mn></mtd></mtr><mtr><mtd><mn>0.02</mn><mi>x</mi><mo>+</mo><mn>0.03</mn><mi>y</mi><mo>=</mo><mn>0.125</mn></mtd></mtr></mtable></mrow></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p83">38.	<span class="inlineequation"><math xml:id="fwk-redden-04_m0227" display="inline"><semantics><mrow><mrow><mo>{</mo><mtable><mtr><mtd><mi>x</mi><mo>+</mo><mi>y</mi><mo>=</mo><mn>30</mn></mtd></mtr><mtr><mtd><mn>0.05</mn><mi>x</mi><mo>+</mo><mn>0.1</mn><mi>y</mi><mo>=</mo><mn>2.4</mn></mtd></mtr></mtable></mrow></mrow></semantics></math></span></p>
+            <p class="para editable" id="fwk-redden-ch04_s03_s03_p85"><em class="emphasis bolditalic">Set up a linear system and solve it using the elimination method.</em></p>
+            <p class="para editable" id="fwk-redden-ch04_s03_s03_p86">39.	The sum of two numbers is 14. The larger number is 1 less than two times the smaller.</p>
+            <p class="para editable" id="fwk-redden-ch04_s03_s03_p88">40.	The sum of two numbers is 30. The larger is 2 more than three times the smaller.</p>
+            <p class="para editable" id="fwk-redden-ch04_s03_s03_p90">41.	The difference of two numbers is 13 and their sum is 11.</p>
+            <p class="para editable" id="fwk-redden-ch04_s03_s03_p92">42.	The difference of two numbers is 2 and their sum is −12.</p>
+            <p class="simpara">Part B: Mixed Exercises</p>
+            <p class="para editable" id="fwk-redden-ch04_s03_s03_p94"><em class="emphasis bolditalic">Solve using any method.</em></p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p95">43.	<span class="inlineequation"><math xml:id="fwk-redden-04_m0228" display="inline"><semantics><mrow><mrow><mo>{</mo><mtable columnalign="left"><mtr><mtd><mi>y</mi><mo>=</mo><mn>2</mn><mi>x</mi><mo>−</mo><mn>3</mn></mtd></mtr><mtr><mtd><mn>3</mn><mi>x</mi><mo>+</mo><mi>y</mi><mo>=</mo><mn>12</mn></mtd></mtr></mtable></mrow></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p97">44.	<span class="inlineequation"><math xml:id="fwk-redden-04_m0229" display="inline"><semantics><mrow><mrow><mo>{</mo><mrow><mtable><mtr><mtd><mrow><mi>x</mi><mo>+</mo><mn>3</mn><mi>y</mi><mo>=</mo><mo>−</mo><mn>5</mn></mrow></mtd></mtr><mtr><mtd><mrow><mi>y</mi><mo>=</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mi>x</mi><mo>+</mo><mn>5</mn></mrow></mtd></mtr></mtable></mrow></mrow></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p99">45.	<span class="inlineequation"><math xml:id="fwk-redden-04_m0230" display="inline"><semantics><mrow><mrow><mo>{</mo><mrow><mtable><mtr><mtd><mrow><mi>x</mi><mo>=</mo><mo>−</mo><mn>1</mn></mrow></mtd></mtr><mtr><mtd><mrow><mi>y</mi><mo>=</mo><mn>3</mn></mrow></mtd></mtr></mtable></mrow></mrow></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p101">46.	<span class="inlineequation"><math xml:id="fwk-redden-04_m0231" display="inline"><semantics><mrow><mrow><mo>{</mo><mrow><mtable><mtr><mtd><mrow><mi>y</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></mtd></mtr><mtr><mtd><mrow><mi>x</mi><mo>+</mo><mn>9</mn><mo>=</mo><mn>0</mn></mrow></mtd></mtr></mtable></mrow></mrow></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p103">47.	<span class="inlineequation"><math xml:id="fwk-redden-04_m0232" display="inline"><semantics><mrow><mrow><mo>{</mo><mrow><mtable><mtr><mtd><mrow><mi>y</mi><mo>=</mo><mi>x</mi></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mi>x</mi><mo>+</mo><mi>y</mi><mo>=</mo><mn>1</mn></mrow></mtd></mtr></mtable></mrow></mrow></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p105">48.	<span class="inlineequation"><math xml:id="fwk-redden-04_m0233" display="inline"><semantics><mrow><mrow><mo>{</mo><mrow><mtable><mtr><mtd><mrow><mi>y</mi><mo>=</mo><mn>5</mn><mi>x</mi></mrow></mtd></mtr><mtr><mtd><mrow><mi>y</mi><mo>=</mo><mo>−</mo><mn>10</mn></mrow></mtd></mtr></mtable></mrow></mrow></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p107">49.	<span class="inlineequation"><math xml:id="fwk-redden-04_m0234" display="inline"><semantics><mrow><mrow><mo>{</mo><mrow><mtable><mtr><mtd><mrow><mn>3</mn><mi>y</mi><mo>=</mo><mn>2</mn><mi>x</mi><mo>−</mo><mn>24</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>3</mn><mi>x</mi><mo>+</mo><mn>4</mn><mi>y</mi><mo>=</mo><mn>2</mn></mrow></mtd></mtr></mtable></mrow></mrow></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p109">50.	<span class="inlineequation"><math xml:id="fwk-redden-04_m0235" display="inline"><semantics><mrow><mrow><mo>{</mo><mrow><mtable><mtr><mtd><mrow><mi>y</mi><mo>=</mo><mo>−</mo><mfrac><mn>3</mn><mn>2</mn></mfrac><mi>x</mi><mo>+</mo><mn>1</mn></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn>2</mn><mi>y</mi><mo>+</mo><mn>2</mn><mo>=</mo><mn>3</mn><mi>x</mi></mrow></mtd></mtr></mtable></mrow></mrow></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p111">51.	<span class="inlineequation"><math xml:id="fwk-redden-04_m0237" display="inline"><semantics><mrow><mrow><mo>{</mo><mrow><mtable><mtr><mtd><mrow><mn>7</mn><mi>y</mi><mo>=</mo><mo>−</mo><mn>2</mn><mi>x</mi><mo>−</mo><mn>1</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>7</mn><mi>x</mi><mo>=</mo><mn>2</mn><mi>y</mi><mo>+</mo><mn>23</mn></mrow></mtd></mtr></mtable></mrow></mrow></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p113">52.	<span class="inlineequation"><math xml:id="fwk-redden-04_m0238" display="inline"><semantics><mrow><mrow><mo>{</mo><mrow><mtable><mtr><mtd><mrow><mn>5</mn><mi>x</mi><mo>+</mo><mn>9</mn><mi>y</mi><mo>−</mo><mn>14</mn><mo>=</mo><mn>0</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>3</mn><mi>x</mi><mo>+</mo><mn>2</mn><mi>y</mi><mo>−</mo><mn>5</mn><mo>=</mo><mn>0</mn></mrow></mtd></mtr></mtable></mrow></mrow></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p115">53.	<span class="inlineequation"><math xml:id="fwk-redden-04_m0239" display="inline"><semantics><mrow><mrow><mo>{</mo><mrow><mtable><mtr><mtd><mrow><mi>y</mi><mo>=</mo><mo>−</mo><mfrac><mn>5</mn><mrow> <mn>16</mn></mrow></mfrac><mi>x</mi><mo>+</mo><mn>10</mn></mrow></mtd></mtr><mtr><mtd><mrow><mi>y</mi><mo>=</mo><mfrac><mn>5</mn><mrow> <mn>16</mn></mrow></mfrac><mi>x</mi><mo>−</mo><mn>10</mn></mrow></mtd></mtr></mtable></mrow></mrow></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p117">54.	<span class="inlineequation"><math xml:id="fwk-redden-04_m0240" display="inline"><semantics><mrow><mrow><mo>{</mo><mrow><mtable><mtr><mtd><mrow><mi>y</mi><mo>=</mo><mo>−</mo><mfrac><mn>6</mn><mn>5</mn></mfrac><mi>x</mi><mo>+</mo><mn>12</mn></mrow></mtd></mtr><mtr><mtd><mrow><mi>x</mi><mo>=</mo><mn>6</mn></mrow></mtd></mtr></mtable></mrow></mrow></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p119">55.	<span class="inlineequation"><math xml:id="fwk-redden-04_m0241" display="inline"><semantics><mrow><mrow><mo>{</mo><mrow><mtable><mtr><mtd><mrow><mn>2</mn><mrow><mo>(</mo><mrow> <mi>x</mi><mo>−</mo><mn>3</mn></mrow><mo>)</mo></mrow><mo>+</mo><mi>y</mi><mo>=</mo><mn>0</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>3</mn><mrow><mo>(</mo><mrow> <mn>2</mn><mi>x</mi><mo>+</mo><mi>y</mi><mo>−</mo><mn>1</mn></mrow><mo>)</mo></mrow><mo>=</mo><mn>15</mn></mrow></mtd></mtr></mtable></mrow></mrow></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p121">56.	<span class="inlineequation"><math xml:id="fwk-redden-04_m0243" display="inline"><semantics><mrow><mrow><mo>{</mo><mrow><mtable><mtr><mtd><mrow><mn>3</mn><mo>−</mo><mn>2</mn><mrow><mo>(</mo><mrow> <mi>x</mi><mo>−</mo><mi>y</mi></mrow><mo>)</mo></mrow><mo>=</mo><mo>−</mo><mn>3</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>4</mn><mi>x</mi><mo>−</mo><mn>3</mn><mrow><mo>(</mo><mrow> <mi>y</mi><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow><mo>=</mo><mn>8</mn></mrow></mtd></mtr></mtable></mrow></mrow></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p123">57.	<span class="inlineequation"><math xml:id="fwk-redden-04_m0244" display="inline"><semantics><mrow><mrow><mo>{</mo><mrow><mtable><mtr><mtd><mrow><mn>2</mn><mrow><mo>(</mo><mrow> <mi>x</mi><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow><mo>=</mo><mn>3</mn><mrow><mo>(</mo><mrow> <mn>2</mn><mi>y</mi><mo>−</mo><mn>1</mn></mrow><mo>)</mo></mrow><mo>−</mo><mn>21</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>3</mn><mrow><mo>(</mo><mrow> <mi>x</mi><mo>+</mo><mn>2</mn></mrow><mo>)</mo></mrow><mo>=</mo><mn>1</mn><mo>−</mo><mo stretchy="false">(</mo><mn>3</mn><mi>y</mi><mo>−</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></mtd></mtr></mtable></mrow></mrow></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p125">58.	<span class="inlineequation"><math xml:id="fwk-redden-04_m0245" display="inline"><semantics><mrow><mrow><mo>{</mo><mrow><mtable><mtr><mtd><mrow><mfrac><mi>x</mi><mn>2</mn></mfrac><mo>−</mo><mfrac><mi>y</mi><mn>3</mn></mfrac><mo>=</mo><mo>−</mo><mn>7</mn></mrow></mtd></mtr><mtr><mtd><mrow><mfrac><mi>x</mi><mn>3</mn></mfrac><mo>−</mo><mfrac><mi>y</mi><mn>2</mn></mfrac><mo>=</mo><mo>−</mo><mn>8</mn></mrow></mtd></mtr></mtable></mrow></mrow></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p127">59.	<span class="inlineequation"><math xml:id="fwk-redden-04_m0246" display="inline"><semantics><mrow><mrow><mo>{</mo><mrow><mtable><mtr><mtd><mrow><mfrac><mi>x</mi><mn>4</mn></mfrac><mo>−</mo><mfrac><mi>y</mi><mn>2</mn></mfrac><mo>=</mo><mfrac><mn>3</mn><mn>4</mn></mfrac></mrow></mtd></mtr><mtr><mtd><mrow><mfrac><mi>x</mi><mn>3</mn></mfrac><mo>+</mo><mfrac><mi>y</mi><mn>6</mn></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>6</mn></mfrac></mrow></mtd></mtr></mtable></mrow></mrow></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p129">60.	<span class="inlineequation"><math xml:id="fwk-redden-04_m0247" display="inline"><semantics><mrow><mrow><mo>{</mo><mrow><mtable><mtr><mtd><mrow><mfrac><mn>1</mn><mn>3</mn></mfrac><mi>x</mi><mo>−</mo><mfrac><mn>2</mn><mn>3</mn></mfrac><mi>y</mi><mo>=</mo><mn>3</mn></mrow></mtd></mtr><mtr><mtd><mrow><mfrac><mn>1</mn><mn>3</mn></mfrac><mi>x</mi><mo>−</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>y</mi><mo>=</mo><mfrac><mn>8</mn><mn>3</mn></mfrac></mrow></mtd></mtr></mtable></mrow></mrow></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p131">61.	<span class="inlineequation"><math xml:id="fwk-redden-04_m0248" display="inline"><semantics><mrow><mrow><mo>{</mo><mrow><mtable><mtr><mtd><mrow><mo>−</mo><mfrac><mn>1</mn><mrow> <mn>10</mn></mrow></mfrac><mi>x</mi><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>y</mi><mo>=</mo><mfrac><mn>4</mn><mn>5</mn></mfrac></mrow></mtd></mtr><mtr><mtd><mrow><mfrac><mn>1</mn><mn>7</mn></mfrac><mi>x</mi><mo>+</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mi>y</mi><mo>=</mo><mo>−</mo><mfrac><mn>2</mn><mrow> <mn>21</mn></mrow></mfrac></mrow></mtd></mtr></mtable></mrow></mrow></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p133">62.	<span class="inlineequation"><math xml:id="fwk-redden-04_m0249" display="inline"><semantics><mrow><mrow><mo>{</mo><mrow><mtable><mtr><mtd><mrow><mi>y</mi><mo>=</mo><mo>−</mo><mfrac><mn>5</mn><mn>3</mn></mfrac><mi>x</mi><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></mtd></mtr><mtr><mtd><mrow><mfrac><mn>1</mn><mn>3</mn></mfrac><mi>x</mi><mo>+</mo><mfrac><mn>1</mn><mn>5</mn></mfrac><mi>y</mi><mo>=</mo><mfrac><mn>1</mn><mrow> <mn>10</mn></mrow></mfrac></mrow></mtd></mtr></mtable></mrow></mrow></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p135">63.	<span class="inlineequation"><math xml:id="fwk-redden-04_m0251" display="inline"><semantics><mrow><mrow><mo>{</mo><mrow><mtable><mtr><mtd><mrow><mo>−</mo><mfrac><mn>1</mn><mn>7</mn></mfrac><mi>x</mi><mo>+</mo><mi>y</mi><mo>=</mo><mo>−</mo><mfrac><mn>2</mn><mn>3</mn></mfrac></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mfrac><mn>1</mn><mrow> <mn>14</mn></mrow></mfrac><mi>x</mi><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>y</mi><mo>=</mo><mfrac><mn>1</mn><mn>3</mn></mfrac></mrow></mtd></mtr></mtable></mrow></mrow></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p137">64.	<span class="inlineequation"><math xml:id="fwk-redden-04_m0253" display="inline"><semantics><mrow><mrow><mo>{</mo><mrow><mtable><mtr><mtd><mrow><mfrac><mn>1</mn><mrow> <mn>15</mn></mrow></mfrac><mi>x</mi><mo>−</mo><mfrac><mn>1</mn><mrow> <mn>12</mn></mrow></mfrac><mi>y</mi><mo>=</mo><mfrac><mn>1</mn><mn>3</mn></mfrac></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mfrac><mn>3</mn><mrow> <mn>10</mn></mrow></mfrac><mi>x</mi><mo>+</mo><mfrac><mn>3</mn><mn>8</mn></mfrac><mi>y</mi><mo>=</mo><mo>−</mo><mfrac><mn>3</mn><mn>2</mn></mfrac></mrow></mtd></mtr></mtable></mrow></mrow></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p139">65.	<span class="inlineequation"><math xml:id="fwk-redden-04_m0255" display="inline"><semantics><mrow><mrow><mo>{</mo><mtable><mtr><mtd><mi>x</mi><mo>+</mo><mi>y</mi><mo>=</mo><mn>4,200</mn></mtd></mtr><mtr><mtd><mn>0.03</mn><mi>x</mi><mo>+</mo><mn>0.0525</mn><mi>y</mi><mo>=</mo><mn>193.5</mn></mtd></mtr></mtable></mrow></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p141">66.	<span class="inlineequation"><math xml:id="fwk-redden-04_m0256" display="inline"><semantics><mrow><mrow><mo>{</mo><mtable><mtr><mtd><mi>x</mi><mo>+</mo><mi>y</mi><mo>=</mo><mn>350</mn></mtd></mtr><mtr><mtd><mn>0.2</mn><mi>x</mi><mo>+</mo><mn>0.1</mn><mi>y</mi><mo>=</mo><mn>52.5</mn></mtd></mtr></mtable></mrow></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p143">67.	<span class="inlineequation"><math xml:id="fwk-redden-04_m0257" display="inline"><semantics><mrow><mrow><mo>{</mo><mtable><mtr><mtd><mn>0.2</mn><mi>x</mi><mo>−</mo><mn>0.05</mn><mi>y</mi><mo>=</mo><mn>0.43</mn></mtd></mtr><mtr><mtd><mn>0.3</mn><mi>x</mi><mo>+</mo><mn>0.1</mn><mi>y</mi><mo>=</mo><mo>−</mo><mn>0.3</mn></mtd></mtr></mtable></mrow></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p145">68.	<span class="inlineequation"><math xml:id="fwk-redden-04_m0258" display="inline"><semantics><mrow><mrow><mo>{</mo><mtable><mtr><mtd><mn>0.1</mn><mi>x</mi><mo>+</mo><mn>0.3</mn><mi>y</mi><mo>=</mo><mn>0.3</mn></mtd></mtr><mtr><mtd><mn>0.05</mn><mi>x</mi><mo>−</mo><mn>0.5</mn><mi>y</mi><mo>=</mo><mo>−</mo><mn>0.63</mn></mtd></mtr></mtable></mrow></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p147">69.	<span class="inlineequation"><math xml:id="fwk-redden-04_m0259" display="inline"><semantics><mrow><mrow><mo>{</mo><mtable><mtr><mtd><mn>0.15</mn><mi>x</mi><mo>−</mo><mn>0.25</mn><mi>y</mi><mo>=</mo><mo>−</mo><mn>0.3</mn></mtd></mtr><mtr><mtd><mo>−</mo><mn>0.75</mn><mi>x</mi><mo>+</mo><mn>1.25</mn><mi>y</mi><mo>=</mo><mo>−</mo><mn>4</mn></mtd></mtr></mtable></mrow></mrow></semantics></math></span></p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p149">70.	<span class="inlineequation"><math xml:id="fwk-redden-04_m0260" display="inline"><semantics><mrow><mrow><mo>{</mo><mtable><mtr><mtd><mo>−</mo><mn>0.15</mn><mi>x</mi><mo>+</mo><mn>1.25</mn><mi>y</mi><mo>=</mo><mn>0.4</mn></mtd></mtr><mtr><mtd><mo>−</mo><mn>0.03</mn><mi>x</mi><mo>+</mo><mn>0.25</mn><mi>y</mi><mo>=</mo><mn>0.08</mn></mtd></mtr></mtable></mrow></mrow></semantics></math></span></p>
+            <p class="simpara">Part C: Discussion Board Topics</p>
+            <p class="para editable" id="fwk-redden-ch04_s03_s03_p151">71.	How do we choose the best method for solving a linear system?</p>
+            <p class="para editable" id="fwk-redden-ch04_s03_s03_p152">72.	What does it mean for a system to be dependent? How can we tell if a given system is dependent?</p>
+        </div>
+        <div class="exercises-math block" id="fwk-redden-ch04_s03_s03_ans01">
+            <h3 class="title editable">Answers</h3>
+            <p class="para editable" id="fwk-redden-ch04_s03_s03_p10">1: (4, −1)</p>
+            <p class="para editable" id="fwk-redden-ch04_s03_s03_p14">3: (−10, 5)</p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p18">5: <span class="inlineequation"><math xml:id="fwk-redden-04_m0188" display="inline"><semantics><mo>∅</mo> </semantics></math></span></p>
+            <p class="para editable" id="fwk-redden-ch04_s03_s03_p22">7: (1/5, −2)</p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p26">9: <span class="inlineequation"><math xml:id="fwk-redden-04_m0194" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mtext> </mtext><mn>2</mn><mi>x</mi><mo>+</mo><mn>4</mn><mo stretchy="false">)</mo></mrow></semantics></math></span></p>
+            <p class="para editable" id="fwk-redden-ch04_s03_s03_p30">11: (6, −1)</p>
+            <p class="para editable" id="fwk-redden-ch04_s03_s03_p34">13: (−3, 3)</p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p38">15: <span class="inlineequation"><math xml:id="fwk-redden-04_m0201" display="inline"><semantics><mo>∅</mo> </semantics></math></span></p>
+            <p class="para editable" id="fwk-redden-ch04_s03_s03_p42">17: (−1, 4)</p>
+            <p class="para editable" id="fwk-redden-ch04_s03_s03_p46">19: (3, −4)</p>
+            <p class="para editable" id="fwk-redden-ch04_s03_s03_p50">21: (−1, 2/3)</p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p54">23: <span class="inlineequation"><math xml:id="fwk-redden-04_m0210" display="inline"><semantics><mo>∅</mo> </semantics></math></span></p>
+            <p class="para editable" id="fwk-redden-ch04_s03_s03_p58">25: (1/5, −2/5)</p>
+            <p class="para editable" id="fwk-redden-ch04_s03_s03_p62">27: (−2, 1)</p>
+            <p class="para editable" id="fwk-redden-ch04_s03_s03_p66">29: (−1, 10)</p>
+            <p class="para editable" id="fwk-redden-ch04_s03_s03_p70">31: (1, 1)</p>
+            <p class="para editable" id="fwk-redden-ch04_s03_s03_p74">33: (−2, −16/3)</p>
+            <p class="para editable" id="fwk-redden-ch04_s03_s03_p78">35: (−4, 6)</p>
+            <p class="para editable" id="fwk-redden-ch04_s03_s03_p82">37: (2.5, 2.5)</p>
+            <p class="para editable" id="fwk-redden-ch04_s03_s03_p87">39: The two numbers are 5 and 9.</p>
+            <p class="para editable" id="fwk-redden-ch04_s03_s03_p91">41: The two numbers are 12 and −1.</p>
+            <p class="para editable" id="fwk-redden-ch04_s03_s03_p96">43: (3, 3)</p>
+            <p class="para editable" id="fwk-redden-ch04_s03_s03_p100">45: (−1, 3)</p>
+            <p class="para editable" id="fwk-redden-ch04_s03_s03_p104">47: Ø</p>
+            <p class="para editable" id="fwk-redden-ch04_s03_s03_p108">49: (6, −4)</p>
+            <p class="para editable" id="fwk-redden-ch04_s03_s03_p112">51: (3, −1)</p>
+            <p class="para editable" id="fwk-redden-ch04_s03_s03_p116">53: (32, 0)</p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p120">55: <span class="inlineequation"><math xml:id="fwk-redden-04_m0242" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mtext> </mtext><mo>−</mo><mn>2</mn><mi>x</mi><mo>+</mo><mn>6</mn><mo stretchy="false">)</mo></mrow></semantics></math></span></p>
+            <p class="para editable" id="fwk-redden-ch04_s03_s03_p124">57: (−4, 3)</p>
+            <p class="para editable" id="fwk-redden-ch04_s03_s03_p128">59: (1, −1)</p>
+            <p class="para editable" id="fwk-redden-ch04_s03_s03_p132">61: (−3, 1)</p>
+            <p class="para" id="fwk-redden-ch04_s03_s03_p136">63: <span class="inlineequation"><math xml:id="fwk-redden-04_m0252" display="inline"><semantics><mo>∅</mo> </semantics></math></span></p>
+            <p class="para editable" id="fwk-redden-ch04_s03_s03_p140">65: (1,200, 3,000)</p>
+            <p class="para editable" id="fwk-redden-ch04_s03_s03_p144">67: (0.8, −5.4)</p>
+            <p class="para editable" id="fwk-redden-ch04_s03_s03_p148">69: Ø</p>
+        </div>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s07-02-solving-linear-systems-by-subs.html"><img src="shared/images/batch-left.png"></a> <a href="s07-02-solving-linear-systems-by-subs.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s07-04-applications-of-linear-systems.html">Next Section</a> <a href="s07-04-applications-of-linear-systems.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  <script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=MML_HTMLorMML"></script>
+  
+  
+</body>
+</html>

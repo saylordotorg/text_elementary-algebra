@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>Applications of Linear Systems</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s07-03-solving-linear-systems-by-elim.html"><img src="shared/images/batch-left.png"></a> <a href="s07-03-solving-linear-systems-by-elim.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s07-05-solving-systems-of-linear-ineq.html">Next Section</a> <a href="s07-05-solving-systems-of-linear-ineq.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="section" id="fwk-redden-ch04_s04" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">4.4</span> Applications of Linear Systems</h2>
+    <div class="learning_objectives editable block" id="fwk-redden-ch04_s04_n01">
+        <h3 class="title">Learning Objectives</h3>
+        <ol class="orderedlist" id="fwk-redden-ch04_s04_l01">
+            <li>Set up and solve applications involving relationships between numbers.</li>
+            <li>Set up and solve applications involving interest and money.</li>
+            <li>Set up and solve mixture problems.</li>
+            <li>Set up and solve uniform motion problems (distance problems).</li>
+        </ol>
+    </div>
+    <div class="section" id="fwk-redden-ch04_s04_s01">
+        <h2 class="title editable block">Problems Involving Relationships between Real Numbers</h2>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s01_p01">We now have the techniques needed to solve linear systems. For this reason, we are no longer limited to using one variable when setting up equations that model applications. If we translate an application to a mathematical setup using two variables, then we need to form a linear system with two equations.</p>
+        <p class="para block"> </p>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s01_p02"><strong class="emphasis bold">Example 1:</strong> The sum of two numbers is 40 and their difference is 8. Find the numbers.</p>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s01_p03"><strong class="emphasis bold">Solution:</strong></p>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s01_p04"><em class="emphasis bolditalic">Identify variables.</em></p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_070" condition="equation-image">
+            <img src="section_07/98ea6aa7302b70188768c98a8fad1baa.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s01_p05"><em class="emphasis bolditalic">Set up equations:</em> When using two variables, we need to set up two equations. The first key phrase, “the <em class="emphasis">sum</em> of the two numbers is 40,” translates as follows:</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_071" condition="equation-image">
+            <img src="section_07/0779bd98e9a2dd2f77a8c22f49822324.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s01_p06">And the second key phrase, “the <em class="emphasis">difference</em> is 8,” leads us to the second equation:</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_072" condition="equation-image">
+            <img src="section_07/cc072a4e1e91ae1ec7d5978ca3f2d00d.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s01_p07">Therefore, our algebraic setup consists of the following system:</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_073" condition="equation-image">
+            <img src="section_07/bc30683b68ebf422947943e3ab038429.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s01_p08"><em class="emphasis bolditalic">Solve:</em> We can solve the resulting system using any method of our choosing. Here we choose to solve by elimination. Adding the equations together eliminates the variable <em class="emphasis">y</em>.</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_074" condition="equation-image">
+            <img src="section_07/c13482f4b558e4c5f89257097b1a06d9.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s01_p09">Once we have <em class="emphasis">x</em>, back substitute to find <em class="emphasis">y</em>.</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_075" condition="equation-image">
+            <img src="section_07/e375576a2933e8a6165c727b7dfe618e.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s01_p10"><em class="emphasis bolditalic">Check:</em> The sum of the two numbers should be 42 and their difference 8.</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_076" condition="equation-image">
+            <img src="section_07/b8dda6208506f4e261fb081bd7e9ce86.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s01_p11">Answer: The two numbers are 24 and 16.</p>
+        <p class="para block"> </p>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s01_p12"><strong class="emphasis bold">Example 2:</strong> The sum of 9 times a larger number and twice a smaller is 6. The difference of 3 times the larger and the smaller is 7. Find the numbers.</p>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s01_p13"><strong class="emphasis bold">Solution:</strong> Begin by assigning variables to the larger and smaller number.</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_077" condition="equation-image">
+            <img src="section_07/1a1290ba2dcd181f89710419ea98ced6.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s01_p14">The first sentence describes a sum and the second sentence describes a difference.</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_078" condition="equation-image">
+            <img src="section_07/0d40f29b71710a0a27df8e62eb2be227.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s01_p15">This leads to the following system:</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_079" condition="equation-image">
+            <img src="section_07/1b755d7c28fdb5cb0a109a8b5d56ecd3.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s01_p16">Solve using the elimination method. Multiply the second equation by 2 and add.</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_080" condition="equation-image">
+            <img src="section_07/36a4c9df059f5d66da4356a8de8687e1.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s01_p17">Back substitute to find <em class="emphasis">y</em>.</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_081" condition="equation-image">
+            <img src="section_07/45d12e6ff4a48ac779bfa20285e25efc.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s01_p18">Answer: The larger number is 4/3 and the smaller number is −3.</p>
+        <p class="para block"> </p>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s01_p19"><strong class="emphasis bold">Try this!</strong> The sum of two numbers is 3. When twice the smaller number is subtracted from 6 times the larger the result is 22. Find the numbers.</p>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s01_p20">Answer: The two numbers are −1/2 and 7/2.</p>
+        <div class="video editable block" id="fwk-redden-ch04_s04_s01_n01">
+            <h3 class="title">Video Solution</h3>
+            <a data-iframe-code='&lt;iframe src="http://www.youtube.com/v/NpTXOUI3kcs" condition="http://img.youtube.com/vi/NpTXOUI3kcs/0.jpg" vendor="youtube" width="450" height="340" scalefit="1"&gt;&lt;/iframe&gt;' href="http://www.youtube.com/v/NpTXOUI3kcs" class="replaced-iframe" onclick="return replaceIframe(this)">(click to see video)</a>
+        </div>
+    </div>
+    <div class="section" id="fwk-redden-ch04_s04_s02">
+        <h2 class="title editable block">Interest and Money Problems</h2>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s02_p01">In this section, the <span class="margin_term"><a class="glossterm">interest and money problems</a><span class="glossdef">Applications involving simple interest and money.</span></span> should seem familiar. The difference is that we will be making use of two variables when setting up the algebraic equations.</p>
+        <p class="para block"> </p>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s02_p02"><strong class="emphasis bold">Example 3:</strong> A roll of 32 bills contains only $5 bills and $10 bills. If the value of the roll is $220, then how many of each bill are in the roll?</p>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s02_p03"><strong class="emphasis bold">Solution:</strong> Begin by identifying the variables.</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_082" condition="equation-image">
+            <img src="section_07/9ce5e370a255a2a1ffeedc40d179a26b.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s02_p04">When using two variables, we need to set up two equations. The first equation is created from the fact that there are 32 bills.</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_083" condition="equation-image">
+            <img src="section_07/b5fb4cc5ce7efe54556710140585049c.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s02_p05">The second equation sums the value of each bill: the total value is $220.</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_084" condition="equation-image">
+            <img src="section_07/b433372bdb0e58d65a7b54733b0e9dc9.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s02_p06">Present both equations as a system; this is our algebraic setup.</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_085" condition="equation-image">
+            <img src="section_07/0797b5880a5d89a3288605276f0e8723.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s02_p07">Here we choose to solve by elimination, although substitution would work just as well. Eliminate <em class="emphasis">x</em> by multiplying the first equation by −5.</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_086" condition="equation-image">
+            <img src="section_07/fbeda10096bed4f7bd391c99068fbb25.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s02_p08">Now add the equations together:</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_087" condition="equation-image">
+            <img src="section_07/b7eba4cc07965dd6aa44506cc9e2671c.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s02_p09">Once we have <em class="emphasis">y</em>, the number of $10 bills, back substitute to find <em class="emphasis">x</em>.</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_088" condition="equation-image">
+            <img src="section_07/96981ab1f1397df66d0e5ca52d337cdf.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s02_p10">Answer: There are twenty $5 bills and twelve $10 bills. The check is left to the reader.</p>
+        <p class="para block"> </p>
+        <p class="para block" id="fwk-redden-ch04_s04_s02_p11"><strong class="emphasis bold">Example 4:</strong> A total of $6,300 was invested in two accounts. Part was invested in a CD at a <span class="inlineequation"><math xml:id="fwk-redden-04_m0261" display="inline"><semantics><mrow><mn>4</mn><mstyle scriptlevel="+1"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mi>%</mi></mrow></semantics></math></span> annual interest rate and part was invested in a money market fund at a <span class="inlineequation"><math xml:id="fwk-redden-04_m0262" display="inline"><semantics><mrow><mn>3</mn><mstyle scriptlevel="+1"><mfrac><mn>3</mn><mn>4</mn></mfrac></mstyle><mi>%</mi></mrow></semantics></math></span> annual interest rate. If the total simple interest for one year was $267.75, then how much was invested in each account?</p>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s02_p12"><strong class="emphasis bold">Solution:</strong></p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_089" condition="equation-image">
+            <img src="section_07/88b898024d3fd666744a885edee8783c.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s02_p13">The total amount in both accounts can be expressed as</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_090" condition="equation-image">
+            <img src="section_07/961d52f2d6397dbac0e37b9a5177adcf.jpg">
+        </div>
+        <p class="para block" id="fwk-redden-ch04_s04_s02_p14">To set up a second equation, use the fact that the total interest was $267.75. Recall that the interest for one year is the interest rate times the principal (<span class="inlineequation"><math xml:id="fwk-redden-04_m0263" display="inline"><semantics><mrow><mi>I</mi><mo>=</mo><mi>p</mi><mi>r</mi><mi>t</mi><mo>=</mo><mi>p</mi><mi>r</mi><mo>⋅</mo><mn>1</mn><mo>=</mo><mi>p</mi><mi>r</mi></mrow></semantics></math></span>). Use this to add the interest in both accounts. Be sure to use the decimal equivalents for the interest rates given as percentages.</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_091" condition="equation-image">
+            <img src="section_07/f7576ed47f3b3bc2628e48bf7ef70b49.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s02_p15">These two equations together form the following linear system:</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_092" condition="equation-image">
+            <img src="section_07/e6192e7ba84d040ea00e02e36314d0c5.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s02_p16">Eliminate <em class="emphasis">y</em> by multiplying the first equation by −0.0375.</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_093" condition="equation-image">
+            <img src="section_07/e29a007fd69db104bb6749e4f87d5218.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s02_p17">Next, add the equations together to eliminate the variable <em class="emphasis">y</em>.</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_094" condition="equation-image">
+            <img src="section_07/ad322f5671814191689404fac5064fac.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s02_p18">Back substitute.</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_095" condition="equation-image">
+            <img src="section_07/d0618ac0454efd2a2d771850662242a4.jpg">
+        </div>
+        <p class="para block" id="fwk-redden-ch04_s04_s02_p19">Answer: $4,200 was invested at <span class="inlineequation"><math xml:id="fwk-redden-04_m0264" display="inline"><semantics><mrow><mn>4</mn><mstyle scriptlevel="+1"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mi>%</mi></mrow></semantics></math></span> and $2,100 was invested at <span class="inlineequation"><math xml:id="fwk-redden-04_m0265" display="inline"><semantics><mrow><mn>3</mn><mstyle scriptlevel="+1"><mfrac><mn>3</mn><mn>4</mn></mfrac></mstyle><mi>%</mi></mrow></semantics></math></span>.</p>
+        <p class="para block"> </p>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s02_p20">At this point, we should be able to solve these types of problems in two ways: with one variable and now with two variables. Setting up word problems with two variables often simplifies the entire process, particularly when the relationships between the variables are not so clear.</p>
+        <p class="para block"> </p>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s02_p21"><strong class="emphasis bold">Try this!</strong> On the first day of a two-day meeting, 10 coffees and 10 doughnuts were purchased for a total of $20.00. Since nobody drank the coffee and all the doughnuts were eaten, the next day only 2 coffees and 14 doughnuts were purchased for a total of $13.00. How much did each coffee and each doughnut cost?</p>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s02_p22">Answer: Coffee: $1.25; doughnut: $0.75</p>
+        <div class="video editable block" id="fwk-redden-ch04_s04_s02_n01">
+            <h3 class="title">Video Solution</h3>
+            <a data-iframe-code='&lt;iframe src="http://www.youtube.com/v/J1fk7HpWkd4" condition="http://img.youtube.com/vi/J1fk7HpWkd4/0.jpg" vendor="youtube" width="450" height="340" scalefit="1"&gt;&lt;/iframe&gt;' href="http://www.youtube.com/v/J1fk7HpWkd4" class="replaced-iframe" onclick="return replaceIframe(this)">(click to see video)</a>
+        </div>
+    </div>
+    <div class="section" id="fwk-redden-ch04_s04_s03">
+        <h2 class="title editable block">Mixture Problems</h2>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s03_p01"><span class="margin_term"><a class="glossterm">Mixture problems</a><span class="glossdef">Applications involving a mixture of amounts usually given as a percentage of some total.</span></span> often include a percentage and some total amount. It is important to make a distinction between these two types of quantities. For example, if a problem states that a 20-ounce container is filled with a 2% saline (salt) solution, then this means that the container is filled with a mixture of salt and water as follows:</p>
+        <div class="informaltable block" frame="all">
+            <table cellpadding="0" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Percentage</th>
+                        <th>Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong class="emphasis bold">Salt</strong></td>
+                        <td>2% = 0.02</td>
+                        <td>0.02(20 ounces) = 0.4 ounces</td>
+                    </tr>
+                    <tr>
+                        <td><strong class="emphasis bold">Water</strong></td>
+                        <td>98% = 0.98</td>
+                        <td>0.98(20 ounces) = 19.6 ounces</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s03_p02">In other words, we multiply the percentage times the total to get the amount of each part of the mixture.</p>
+        <p class="para block"> </p>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s03_p03"><strong class="emphasis bold">Example 5:</strong> A 2% saline solution is to be combined and mixed with a 5% saline solution to produce 72 ounces of a 2.5% saline solution. How much of each is needed?</p>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s03_p04"><strong class="emphasis bold">Solution:</strong></p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_096" condition="equation-image">
+            <img src="section_07/9e7b039f7f93b54501fe56e8c47e59a7.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s03_p05">The total amount of saline solution needed is 72 ounces. This leads to one equation,</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_097" condition="equation-image">
+            <img src="section_07/e1aa8032f343fe62c56238b92bc40f2b.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s03_p06">The second equation adds up the amount of salt in the correct percentages. The amount of salt is obtained by multiplying the percentage times the amount, where the variables <em class="emphasis">x</em> and <em class="emphasis">y</em> represent the amounts of the solutions.</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_098" condition="equation-image">
+            <img src="section_07/e898c17ddad6b57de4eb18bf1706f3ee.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s03_p07">The algebraic setup consists of both equations presented as a system:</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_099" condition="equation-image">
+            <img src="section_07/eca73af2ab9001890000fce54e1478de.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s03_p08">Solve.</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_100" condition="equation-image">
+            <img src="section_07/f904ae8304e262966bc6592d420d806f.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s03_p09">Back substitute.</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_101" condition="equation-image">
+            <img src="section_07/45af165eec4b2f18af5e1cea482b4cb7.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s03_p10">Answer: We need 60 ounces of the 2% saline solution and 12 ounces of the 5% saline solution.</p>
+        <p class="para block"> </p>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s03_p11"><strong class="emphasis bold">Example 6:</strong> A 50% alcohol solution is to be mixed with a 10% alcohol solution to create an 8-ounce mixture of a 32% alcohol solution. How much of each is needed?</p>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s03_p12"><strong class="emphasis bold">Solution:</strong></p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_102" condition="equation-image">
+            <img src="section_07/5d4180f1fd7484b97e3ed4ae7477461f.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s03_p13">The total amount of the mixture must be 8 ounces.</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_103" condition="equation-image">
+            <img src="section_07/a76dce15a4a6ebeb3be462abe9127823.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s03_p14">The second equation adds up the amount of alcohol from each solution in the correct percentages. The amount of alcohol in the end result is 32% of 8 ounces, or 0.032(8).</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_104" condition="equation-image">
+            <img src="section_07/e87bc4711e7837aa73c562875a47b357.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s03_p15">Now we can form a system of two linear equations and two variables as follows:</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_105" condition="equation-image">
+            <img src="section_07/efa393b804e53667588f88773ba6b64d.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s03_p16">In this example, multiply the second equation by 100 to eliminate the decimals. In addition, multiply the first equation by −10 to line up the variable <em class="emphasis">y</em> to eliminate.</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_106" condition="equation-image">
+            <img src="section_07/3e33296ba2f689f7ebccea5cccda1109.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s03_p17">We obtain the following equivalent system:</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_107" condition="equation-image">
+            <img src="section_07/bb5196249be8aa5c38e299293ce87368.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s03_p18">Add the equations and then solve for <em class="emphasis">x</em>:</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_108" condition="equation-image">
+            <img src="section_07/67cb667edb32869df2dc6fab7484862b.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s03_p19">Back substitute.</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_109" condition="equation-image">
+            <img src="section_07/154e07b3b218a65e83cdd1ec1ca484d8.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s03_p20">Answer: To obtain 8 ounces of a 32% alcohol mixture we need to mix 4.4 ounces of the 50% alcohol solution and 3.6 ounces of the 10% solution.</p>
+        <p class="para block"> </p>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s03_p21"><strong class="emphasis bold">Try this!</strong> A 70% antifreeze concentrate is to be mixed with water to produce a 5-gallon mixture containing 28% antifreeze. How much water and antifreeze concentrate is needed?</p>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s03_p22">Answer: We need to mix 3 gallons of water with 2 gallons of antifreeze concentrate.</p>
+        <div class="video editable block" id="fwk-redden-ch04_s04_s03_n01">
+            <h3 class="title">Video Solution</h3>
+            <a data-iframe-code='&lt;iframe src="http://www.youtube.com/v/ONqTA4Aq0EU" condition="http://img.youtube.com/vi/ONqTA4Aq0EU/0.jpg" vendor="youtube" width="450" height="340" scalefit="1"&gt;&lt;/iframe&gt;' href="http://www.youtube.com/v/ONqTA4Aq0EU" class="replaced-iframe" onclick="return replaceIframe(this)">(click to see video)</a>
+        </div>
+    </div>
+    <div class="section" id="fwk-redden-ch04_s04_s04">
+        <h2 class="title editable block">Uniform Motion Problems (Distance Problems)</h2>
+        <p class="para block" id="fwk-redden-ch04_s04_s04_p01">Recall that the distance traveled is equal to the average rate times the time traveled at that rate, <span class="inlineequation"><math xml:id="fwk-redden-04_m0266" display="inline"><semantics><mrow><mi>D</mi><mo>=</mo><mi>r</mi><mo>⋅</mo><mi>t</mi></mrow></semantics></math></span>. These <span class="margin_term"><a class="glossterm">uniform motion problems</a><span class="glossdef">Applications relating distance, average rate, and time.</span></span> usually have a lot of data, so it helps to first organize that data in a chart and then set up a linear system. In this section, you are encouraged to use two variables.</p>
+        <p class="para block"> </p>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s04_p02"><strong class="emphasis bold">Example 7:</strong> An executive traveled a total of 8 hours and 1,930 miles by car and by plane. Driving to the airport by car, she averaged 60 miles per hour. In the air, the plane averaged 350 miles per hour. How long did it take her to drive to the airport?</p>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s04_p03"><strong class="emphasis bold">Solution:</strong> We are asked to find the time it takes her to drive to the airport; this indicates that time is the unknown quantity.</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_110" condition="equation-image">
+            <img src="section_07/55c5fcdbcc13641c846144e04ca63ab3.jpg">
+        </div>
+        <div class="informalfigure large block" id="fwk-redden-fig04_x025" condition="redden">
+            <img src="section_07/703d715a8f258993ba8306203573e9e3.jpg">
+        </div>
+        <p class="para block" id="fwk-redden-ch04_s04_s04_p04">Use the formula <span class="inlineequation"><math xml:id="fwk-redden-04_m0267" display="inline"><semantics><mrow><mi>D</mi><mo>=</mo><mi>r</mi><mo>⋅</mo><mi>t</mi></mrow></semantics></math></span> to fill in the unknown distances.</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_111" condition="equation-image">
+            <img src="section_07/0124aa5b2d5dd5242c6b52ab9cf4a56f.jpg">
+        </div>
+        <div class="informalfigure large block" id="fwk-redden-fig04_x026" condition="redden">
+            <img src="section_07/7d67460e9527517c89834a1cf4803a8b.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s04_p05">The distance column and the time column of the chart help us to set up the following linear system.</p>
+        <div class="informalfigure large block" id="fwk-redden-fig04_x027" condition="redden">
+            <img src="section_07/ee7712c9ad46129d9cf088773bc32812.jpg">
+        </div>
+        <div class="informalfigure large block" id="fwk-redden-eq04_112" condition="equation-image">
+            <img src="section_07/98a0323557ed9d9af90bc6ee8f22a396.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s04_p06">Solve.</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_113" condition="equation-image">
+            <img src="section_07/278d3dd770c6d0e262b2dfe19dd00f8b.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s04_p07">Now back substitute to find the time it took to drive to the airport <em class="emphasis">x</em>:</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_114" condition="equation-image">
+            <img src="section_07/e939755a3bd43da5882b8762618d7e00.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s04_p08">Answer: It took her 3 hours to drive to the airport.</p>
+        <p class="para block"> </p>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s04_p09">It is not always the case that time is the unknown quantity. Read the problem carefully and identify what you are asked to find; this defines your variables.</p>
+        <p class="para block"> </p>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s04_p10"><strong class="emphasis bold">Example 8:</strong> Flying with the wind, an airplane traveled 1,365 miles in 3 hours. The plane then turned against the wind and traveled another 870 miles in 2 hours. Find the speed of the airplane and the speed of the wind.</p>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s04_p11"><strong class="emphasis bold">Solution:</strong> There is no obvious relationship between the speed of the plane and the speed of the wind. For this reason, use two variables as follows:</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_115" condition="equation-image">
+            <img src="section_07/39e01120f920239074f77a04e5c9288c.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s04_p12">Use the following chart to organize the data:</p>
+        <div class="informalfigure large block" id="fwk-redden-fig04_x028" condition="redden">
+            <img src="section_07/0259598fa85132418efe37e76299640c.jpg">
+        </div>
+        <p class="para block" id="fwk-redden-ch04_s04_s04_p13">With the wind, the airplane’s total speed is <span class="inlineequation"><math xml:id="fwk-redden-04_m0268" display="inline"><semantics><mrow><mi>x</mi><mo>+</mo><mi>w</mi></mrow></semantics></math></span>. Flying against the wind, the total speed is <span class="inlineequation"><math xml:id="fwk-redden-04_m0269" display="inline"><semantics><mrow><mi>x</mi><mo>−</mo><mi>w</mi></mrow></semantics></math></span>.</p>
+        <div class="informalfigure large block" id="fwk-redden-fig04_x029" condition="redden">
+            <img src="section_07/e7c8e5da5157b00b7eabb8a747b0d2e6.jpg">
+        </div>
+        <p class="para block" id="fwk-redden-ch04_s04_s04_p14">Use the rows of the chart along with the formula <span class="inlineequation"><math xml:id="fwk-redden-04_m0270" display="inline"><semantics><mrow><mi>D</mi><mo>=</mo><mi>r</mi><mo>⋅</mo><mi>t</mi></mrow></semantics></math></span> to construct a linear system that models this problem. Take care to group the quantities that represent the rate in parentheses.</p>
+        <div class="informalfigure large block" id="fwk-redden-fig04_x030" condition="redden">
+            <img src="section_07/fc000607f07070f90d2c159ae8b7a821.jpg">
+        </div>
+        <div class="informalfigure large block" id="fwk-redden-eq04_116" condition="equation-image">
+            <img src="section_07/23c318035eac25dce66ce9375e54572f.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s04_p15">If we divide both sides of the first equation by 3 and both sides of the second equation by 2, then we obtain the following equivalent system:</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_117" condition="equation-image">
+            <img src="section_07/dd58560c03ecc12d6db67378d33a77e3.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s04_p16">Back substitute.</p>
+        <div class="informalfigure large block" id="fwk-redden-eq04_118" condition="equation-image">
+            <img src="section_07/5e758884cfaa2f9506d33ff067225afe.jpg">
+        </div>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s04_p17">Answer: The speed of the airplane is 445 miles per hour and the speed of the wind is 10 miles per hour.</p>
+        <p class="para block"> </p>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s04_p18"><strong class="emphasis bold">Try this!</strong> A boat traveled 24 miles downstream in 2 hours. The return trip, which was against the current, took twice as long. What are the speeds of the boat and of the current?</p>
+        <p class="para editable block" id="fwk-redden-ch04_s04_s04_p19">Answer: The speed of the boat is 9 miles per hour and the speed of the current is 3 miles per hour.</p>
+        <div class="video editable block" id="fwk-redden-ch04_s04_s04_n01">
+            <h3 class="title">Video Solution</h3>
+            <a data-iframe-code='&lt;iframe src="http://www.youtube.com/v/F2w7FqNX5RY" condition="http://img.youtube.com/vi/F2w7FqNX5RY/0.jpg" vendor="youtube" width="450" height="340" scalefit="1"&gt;&lt;/iframe&gt;' href="http://www.youtube.com/v/F2w7FqNX5RY" class="replaced-iframe" onclick="return replaceIframe(this)">(click to see video)</a>
+        </div>
+        <div class="key_takeaways editable block" id="fwk-redden-ch04_s04_s04_n02">
+            <h3 class="title">Key Takeaways</h3>
+            <ul class="itemizedlist" id="fwk-redden-ch04_s04_s04_l01">
+                <li>Use two variables as a means to simplify the algebraic setup of applications where the relationship between unknowns is unclear.</li>
+                <li>Carefully read the problem several times. If two variables are used, then remember that you need to set up two linear equations in order to solve the problem.</li>
+                <li>Be sure to answer the question in sentence form and include the correct units for the answer.</li>
+            </ul>
+        </div>
+        <div class="exercises-math block" id="fwk-redden-ch04_s04_s04_n03">
+            <h3 class="title editable">Topic Exercises</h3>
+            <p class="simpara">Part A: Applications Involving Numbers</p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p20"><em class="emphasis bolditalic">Set up a linear system and solve.</em></p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p21">1.	The sum of two integers is 54 and their difference is 10. Find the integers.</p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p23">2.	The sum of two integers is 50 and their difference is 24. Find the integers.</p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p25">3.	The sum of two positive integers is 32. When the smaller integer is subtracted from twice the larger, the result is 40. Find the two integers.</p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p27">4.	The sum of two positive integers is 48. When twice the smaller integer is subtracted from the larger, the result is 12. Find the two integers.</p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p29">5.	The sum of two integers is 74. The larger is 26 more than twice the smaller. Find the two integers.</p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p31">6.	The sum of two integers is 45. The larger is 3 less than three times the smaller. Find the two integers.</p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p33">7.	The sum of two numbers is zero. When 4 times the smaller number is added to 8 times the larger, the result is 1. Find the two numbers.</p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p35">8.	The sum of a larger number and 4 times a smaller number is 5. When 8 times the smaller is subtracted from twice the larger, the result is −2. Find the numbers.</p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p37">9.	The sum of 12 times the larger number and 11 times the smaller is −36. The difference of 12 times the larger and 7 times the smaller is 36. Find the numbers.</p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p39">10.	The sum of 4 times the larger number and 3 times the smaller is 7. The difference of 8 times the larger and 6 times the smaller is 10. Find the numbers.</p>
+            <p class="simpara">Part B: Interest and Money Problems</p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p41"><em class="emphasis bolditalic">Set up a linear system and solve.</em></p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p42">11.	A $7,000 principal is invested in two accounts, one earning 3% interest and another earning 7% interest. If the total interest for the year is $262, then how much is invested in each account?</p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p44">12.	Mary has her total savings of $12,500 in two different CD accounts. One CD earns 4.4% interest and another earns 3.2% interest. If her total interest for the year is $463, then how much does she have in each CD account?</p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p46">13.	Sally’s $1,800 savings is in two accounts. One account earns 6% annual interest and the other earns 3%. Her total interest for the year is $93. How much does she have in each account?</p>
+            <p class="para" id="fwk-redden-ch04_s04_s04_p48">14.	Joe has two savings accounts totaling $4,500. One account earns <span class="inlineequation"><math xml:id="fwk-redden-04_m0271" display="inline"><semantics><mrow><mn>3</mn><mstyle scriptlevel="+1"><mfrac><mn>3</mn><mn>4</mn></mfrac></mstyle><mi>%</mi></mrow></semantics></math></span> annual interest and the other earns <span class="inlineequation"><math xml:id="fwk-redden-04_m0272" display="inline"><semantics><mrow><mn>2</mn><mstyle scriptlevel="+1"><mfrac><mn>5</mn><mn>8</mn></mfrac></mstyle><mi>%</mi></mrow></semantics></math></span>. If his total interest for the year is $141.75, then how much is in each account?</p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p51">15.	Millicent has $10,000 invested in two accounts. For the year, she earns $535 more in interest from her 7% mutual fund account than she does from her 4% CD. How much does she have in each account?</p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p53">16.	A small business has $85,000 invested in two accounts. If the account earning 3% annual interest earns $825 more in interest than the account earning 4.5% annual interest, then how much is invested in each account?</p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p55">17.	Jerry earned a total of $284 in simple interest from two separate accounts. In an account earning 6% interest, Jerry invested $1,000 more than twice the amount he invested in an account earning 4%. How much did he invest in each account?</p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p57">18.	James earned a total of $68.25 in simple interest from two separate accounts. In an account earning 2.6% interest, James invested one-half as much as he did in the other account that earned 5.2%. How much did he invest in each account?</p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p59">19.	A cash register contains $10 bills and $20 bills with a total value of $340. If there are 23 bills total, then how many of each does the register contain?</p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p61">20.	John was able to purchase a pizza for $10.80 with quarters and dimes. If he uses 60 coins to buy the pizza, then how many of each did he have?</p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p63">21.	Dennis mowed his neighbor’s lawn for a jar of dimes and nickels. Upon completing the job, he counted the coins and found that there were 4 less than twice as many dimes as there were nickels. The total value of all the coins is $6.60. How many of each coin did he have?</p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p65">22.	Two families bought tickets for the big football game. One family ordered 2 adult tickets and 3 children’s tickets for a total of $26.00. Another family ordered 3 adult tickets and 4 children’s tickets for a total of $37.00. How much did each adult ticket cost?</p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p67">23.	Two friends found shirts and shorts on sale at a flea market. One bought 5 shirts and 3 shorts for a total of $51.00. The other bought 3 shirts and 7 shorts for a total of $80.00. How much was each shirt and each pair of shorts?</p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p69">24.	On Monday Joe bought 10 cups of coffee and 5 doughnuts for his office at a cost of $16.50. It turns out that the doughnuts were more popular than the coffee. Therefore, on Tuesday he bought 5 cups of coffee and 10 doughnuts for a total of $14.25. How much was each cup of coffee?</p>
+            <p class="simpara">Part C: Mixture Problems</p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p71"><em class="emphasis bolditalic">Set up a linear system and solve.</em></p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p72">25.	A 15% acid solution is to be mixed with a 25% acid solution to produce 12 gallons of a 20% acid solution. How much of each is needed?</p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p74">26.	One alcohol solution contains 12% alcohol and another contains 26% alcohol. How much of each should be mixed together to obtain 5 gallons of a 14.8% alcohol solution?</p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p76">27.	A nurse wishes to obtain 40 ounces of a 1.2% saline solution. How much of a 1% saline solution must she mix with a 2% saline solution to achieve the desired result?</p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p78">28.	A customer ordered 20 pounds of fertilizer that contains 15% nitrogen. To fill the customer’s order, how much of the stock 30% nitrogen fertilizer must be mixed with the 10% nitrogen fertilizer?</p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p80">29.	A customer ordered 2 pounds of a mixed peanut product containing 15% cashews. The inventory consists of only two mixes containing 10% and 30% cashews. How much of each type must be mixed to fill the order?</p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p82">30.	How many pounds of pure peanuts must be combined with a 20% peanut mix to produce 10 pounds of a 32% peanut mix?</p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p84">31.	How much cleaning fluid with 20% alcohol content, must be mixed with water to obtain a 24-ounce mixture with 10% alcohol content?</p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p86">32.	A chemist wishes to create a 32-ounce solution with 12% acid content. He uses two types of stock solutions, one with 30% acid content and another with 10% acid content. How much of each does he need?</p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p88">33.	A concentrated cleaning solution that contains 50% ammonia is mixed with another solution containing 10% ammonia. How much of each is mixed to obtain 8 ounces of a 32% ammonia cleaning formula?</p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p90">34.	A 50% fruit juice concentrate can be purchased wholesale. Best taste is achieved when water is mixed with the concentrate in such a way as to obtain a 12% fruit juice mixture. How much water and concentrate is needed to make a 50-ounce fruit juice drink?</p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p92">35.	A 75% antifreeze concentrate is to be mixed with water to obtain 6 gallons of a 25% antifreeze solution. How much water is needed?</p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p94">36.	Pure sugar is to be mixed with a fruit salad containing 10% sugar to produce 48 ounces of a salad containing 16% sugar. How much pure sugar is required?</p>
+            <p class="simpara">Part D: Uniform Motion Problems</p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p96"><em class="emphasis bolditalic">Set up a linear system and solve.</em></p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p97">37.	An airplane averaged 460 miles per hour on a trip with the wind behind it and 345 miles per hour on the return trip against the wind. If the total round trip took 7 hours, then how long did the airplane spend on each leg of the trip?</p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p99">38.	The two legs of a 330-mile trip took 5 hours. The average speed for the first leg of the trip was 70 miles per hour and the average speed for the second leg of the trip was 60 miles per hour. How long did each leg of the trip take?</p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p101">39.	An executive traveled 1,200 miles, part by helicopter and part by private jet. The jet averaged 320 miles per hour while the helicopter averaged 80 miles per hour. If the total trip took 4½ hours, then how long did she spend in the private jet?</p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p103">40.	Joe took two buses on the 463-mile trip from San Jose to San Diego. The first bus averaged 50 miles per hour and the second bus was able to average 64 miles per hour. If the total trip took 8 hours, then how long was spent in each bus?</p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p105">41.	Billy canoed downstream to the general store at an average rate of 9 miles per hour. His average rate canoeing back upstream was 4 miles per hour. If the total trip took 6½ hours, then how long did it take Billy to get back on the return trip?</p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p107">42.	Two brothers drove the 2,793 miles from Los Angeles to New York. One of the brothers, driving in the day, was able to average 70 miles per hour, and the other, driving at night, was able to average 53 miles per hour. If the total trip took 45 hours, then how many hours did each brother drive?</p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p109">43.	A boat traveled 24 miles downstream in 2 hours. The return trip took twice as long. What was the speed of the boat and the current?</p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p111">44.	A helicopter flying with the wind can travel 525 miles in 5 hours. On the return trip, against the wind, it will take 7 hours. What are the speeds of the helicopter and of the wind?</p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p113">45.	A boat can travel 42 miles with the current downstream in 3 hours. Returning upstream against the current, the boat can only travel 33 miles in 3 hours. Find the speed of the current.</p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p115">46.	A light aircraft flying with the wind can travel 180 miles in 1½ hours. The aircraft can fly the same distance against the wind in 2 hours. Find the speed of the wind.</p>
+            <p class="simpara">Part E: Discussion Board</p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p117">47.	Compose a number or money problem that can be solved with a system of equations of your own and share it on the discussion board.</p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p118">48.	Compose a mixture problem that can be solved with a system of equations of your own and share it on the discussion board.</p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p119">49.	Compose a uniform motion problem that can be solved with a system of equations of your own and share it on the discussion board.</p>
+        </div>
+        <div class="exercises-math block" id="fwk-redden-ch04_s04_s04_ans01">
+            <h3 class="title editable">Answers</h3>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p22">1: The integers are 22 and 32.</p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p26">3: The integers are 8 and 24.</p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p30">5: The integers are 16 and 58.</p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p34">7: The two numbers are −1/4 and 1/4.</p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p38">9: The smaller number is −4 and the larger is 2/3.</p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p43">11: $5,700 at 3% and $1,300 at 7%</p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p47">13: $1,300 at 6% and $500 at 3%</p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p52">15: $8,500 at 7% and $1,500 at 4%</p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p56">17: $1,400 at 4% and $3,800 at 6%</p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p60">19: 12 tens and 11 twenties</p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p64">21: 52 dimes and 28 nickels</p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p68">23: Shirts: $4.50; shorts: $9.50</p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p73">25: 6 gallons of each</p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p77">27: 32 ounces of the 1% saline solution and 8 ounces of the 2% saline solution</p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p81">29: 1.5 pounds of the 10% cashew mix and 0.5 pounds of the 30% cashew mix</p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p85">31: 12 ounces of cleaning fluid</p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p89">33: 4.4 ounces of the 50% ammonia solution and 3.6 ounces of the 10% ammonia solution</p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p93">35: 4 gallons</p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p98">37: The airplane flew 3 hours with the wind and 4 hours against the wind.</p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p102">39: 3.5 hours</p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p106">41: 4.5 hours</p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p110">43: Boat: 9 miles per hour; current: 3 miles per hour</p>
+            <p class="para editable" id="fwk-redden-ch04_s04_s04_p114">45: 1.5 miles per hour</p>
+        </div>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s07-03-solving-linear-systems-by-elim.html"><img src="shared/images/batch-left.png"></a> <a href="s07-03-solving-linear-systems-by-elim.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s07-05-solving-systems-of-linear-ineq.html">Next Section</a> <a href="s07-05-solving-systems-of-linear-ineq.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  <script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=MML_HTMLorMML"></script>
+  
+  
+</body>
+</html>
